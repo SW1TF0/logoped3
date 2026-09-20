@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Логопед в Кърджали – диагностика и терапия на речта</title>
+<meta name="description" content="Логопедичен кабинет: диагностика и терапия на речта за деца и възрастни. Запишете час онлайн.">
+<meta name="theme-color" content="#17211A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Логопед – диагностика и терапия на речта">
+<meta property="og:description" content="Запишете час онлайн за консултация и терапия на речта.">
+<meta property="og:locale" content="bg_BG">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F4F8F2'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='%2318211B' font-family='Georgia,serif'%3EЛ%3C/text%3E%3C/svg%3E">
+<!-- EU-hosted, GDPR-friendly font CDN -->
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link id="fontcss" rel="stylesheet" href="https://fonts.bunny.net/css?family=playfair-display:400,400i,500,500i,600,600i|mulish:300,400,500,600,700&display=swap">
+<style>
+:root{
+  --paper:#F9FBF7; --cream:#F4F8F2; --greige:#E4EBE0; --greige-2:#DBE4D6;
+  --blush:#DFEBDA; --blush-2:#EDF3EA;
+  --rose:#AFC9A4; --rose-d:#93B286; --rose-t:#5A7F55;
+  --ink:#18211B; --ink-2:#56605A; --ink-3:#8B968C; --line:#DCE4D8;
+  --dark:#17211A; --dark-2:#22301F;
+  --ok:#3F7A58; --ok-l:#E2F0E7; --red:#A85A4C; --red-l:#F6E5E1;
+  --f-head:"Playfair Display",Georgia,"Times New Roman",serif;
+  --f-body:"Mulish","Segoe UI",Roboto,Arial,sans-serif;
+  --wrap:1280px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink-2);font-family:var(--f-body);font-size:16.5px;font-weight:400;line-height:1.75;letter-spacing:.005em}
+img{max-width:100%;display:block}
+a{color:var(--rose-t)}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--f-head);font-weight:400;color:var(--ink);line-height:1.18;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,4.6vw,4.05rem);letter-spacing:.005em}
+h2{font-size:clamp(1.9rem,3.2vw,2.75rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1.1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 20px}}
+.lead{font-size:1.06rem;max-width:62ch}
+.muted{color:var(--ink-3)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--rose-d);outline-offset:3px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.eyebrow{display:flex;align-items:center;gap:16px;font-family:var(--f-body);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-t);margin-bottom:22px}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--rose)}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{display:none}
+.italic-line{font-style:italic;color:var(--rose-t);display:block}
+.rule{width:64px;height:1px;background:var(--rose);margin:28px 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;border:0;border-radius:0;padding:17px 34px;cursor:pointer;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:background .25s,color .25s,border-color .25s;min-height:48px}
+.btn-primary{background:var(--rose);color:var(--ink)}
+.btn-primary:hover{background:var(--rose-d)}
+.btn-sun{background:var(--rose);color:var(--ink)}
+.btn-sun:hover{background:var(--rose-d)}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink-3)}
+.btn-sm{padding:9px 16px;min-height:36px;font-size:.68rem;letter-spacing:.12em}
+.btn-ok{background:var(--ok-l);color:var(--ok)}
+.btn-bad{background:var(--red-l);color:var(--red)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn-arrow::after{content:"";width:26px;height:1px;background:currentColor}
+.link-more{display:inline-flex;align-items:center;gap:14px;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-t);text-decoration:none}
+.link-more::after{content:"";width:34px;height:1px;background:var(--rose)}
+.link-more:hover::after{width:52px;transition:width .25s}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:1px solid transparent;transition:border-color .25s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:88px;max-width:1440px}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.logo-mark{font-family:var(--f-head);font-size:2.1rem;line-height:1;color:var(--ink);letter-spacing:-.04em}
+.logo b{display:block;font-family:var(--f-body);font-weight:600;font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);line-height:1.3}
+.logo small{display:block;font-size:.64rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3)}
+.nav{margin-left:auto;display:flex;gap:26px;align-items:center}
+.nav a{text-decoration:none;color:var(--ink);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:6px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:var(--rose-t);border-bottom-color:var(--rose)}
+.menu-btn{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+.menu-btn span{display:block;width:26px;height:1.5px;background:var(--ink);margin:6px 0}
+@media (max-width:1080px){
+  .nav{position:fixed;inset:88px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:var(--cream);padding:8px 24px 24px;border-bottom:1px solid var(--line);display:none}
+  .nav.open{display:flex}
+  .nav a{padding:16px 0;width:100%;border-bottom:1px solid var(--line);font-size:.8rem}
+  .menu-btn{display:block}
+  .top .btn-cta{display:none}
+}
+.demo-bar{background:var(--blush);color:var(--ink);text-align:center;font-size:.82rem;letter-spacing:.04em;padding:9px 16px}
+
+/* views + bands */
+.view{display:none}
+.view.active{display:block}
+section.band{padding:104px 0}
+.band-white{background:var(--cream)}
+.band-lilac{background:var(--cream)}
+.band-ink{background:var(--greige)}
+.band-blush{background:var(--blush-2)}
+.sec-head{max-width:660px;margin-bottom:52px}
+@media (max-width:760px){section.band{padding:68px 0}}
+
+/* hero */
+.hero{background:linear-gradient(120deg,var(--cream) 0%,var(--greige) 100%);padding:0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;min-height:min(78vh,720px);padding-top:56px;padding-bottom:56px}
+.hero h1{margin-bottom:0}
+.hero .lead{margin-top:6px;font-size:1.08rem}
+.hero .lead b{font-weight:700;color:var(--ink)}
+.kw{display:flex;flex-wrap:wrap;gap:8px 0;margin:26px 0 34px;font-size:.72rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--ink)}
+.kw span{display:flex;align-items:center;gap:14px}
+.kw span+span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--rose);margin-right:14px}
+.hero-photo{position:relative;aspect-ratio:4/4.6;background:var(--blush-2);overflow:hidden;display:grid;place-items:center}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo .letters{display:grid;grid-template-columns:repeat(2,1fr);gap:0;width:100%;height:100%}
+.hero-photo .letters span{display:grid;place-items:center;font-family:var(--f-head);font-size:clamp(2.6rem,7vw,5rem);color:var(--rose-t);border:1px solid rgba(147,178,134,.45);font-style:italic}
+.hero-photo .letters span:nth-child(2n){background:rgba(223,235,218,.7)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:36px;min-height:0}.hero-photo{max-width:440px;aspect-ratio:4/3.4}}
+
+/* feature strip */
+.strip-hold{position:relative;z-index:5;margin-top:-72px}
+@media (max-width:900px){.strip-hold{margin-top:-40px}}
+.strip{background:var(--cream);border-radius:6px;padding:44px 24px;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;box-shadow:0 20px 50px rgba(28,26,25,.05)}
+.strip .f{text-align:center;padding:0 12px}
+.strip svg{margin:0 auto 18px;color:var(--rose)}
+.strip h3{font-family:var(--f-body);font-size:.73rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--rose-t);margin-bottom:12px}
+.strip p{font-size:.93rem;margin:0;color:var(--ink-2)}
+@media (max-width:1000px){.strip{grid-template-columns:repeat(2,1fr);gap:32px}}
+@media (max-width:560px){.strip{grid-template-columns:1fr}}
+
+/* stats */
+.stats{background:var(--blush);padding:52px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stats .s+.s{border-left:1px solid rgba(90,127,85,.28)}
+.stats b{display:block;font-family:var(--f-head);font-size:clamp(1.7rem,2.6vw,2.4rem);color:var(--rose-t);font-weight:400;line-height:1.1}
+.stats span{display:block;margin-top:8px;font-size:.7rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-2)}
+@media (max-width:760px){.stats .wrap{grid-template-columns:1fr 1fr;gap:28px}.stats .s:nth-child(odd){border-left:0}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-quote{background:var(--greige);padding:48px;font-family:var(--f-head);font-size:1.5rem;font-style:italic;color:var(--ink);line-height:1.5;position:relative}
+.about-quote::before{content:"“";position:absolute;top:10px;left:24px;font-family:var(--f-head);font-size:5rem;color:var(--rose);line-height:1}
+.about-quote p{margin:0;padding-top:24px}
+.about-quote cite{display:block;margin-top:22px;font-family:var(--f-body);font-style:normal;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-t)}
+.creds{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.creds li{display:flex;gap:16px;align-items:flex-start;font-size:.98rem}
+.creds li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rose);margin-top:.65em;flex:none}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:40px}}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.svc{border:1px solid var(--line);margin:-1px 0 0 -1px;padding:40px 34px;background:var(--cream);transition:background .25s}
+.svc:hover{background:var(--blush-2)}
+.svc-ico{display:block;font-family:var(--f-head);font-style:italic;font-size:1.9rem;color:var(--rose);margin-bottom:26px;line-height:1}
+.svc h3{font-size:1.22rem;margin-bottom:.55em}
+.svc p{font-size:.97rem;margin:0}
+.svc .meta{margin-top:14px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-t)}
+@media (max-width:980px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.services{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;counter-reset:st}
+.step{counter-increment:st;padding-top:26px;border-top:1px solid var(--rose)}
+.step::before{content:"0" counter(st);display:block;font-family:var(--f-head);font-size:1.5rem;color:var(--rose-t);margin-bottom:22px}
+.step h3{font-family:var(--f-body);font-size:.76rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;margin-bottom:14px}
+.step p{font-size:.95rem;margin:0}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:32px}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* booking */
+.booker{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.panel{background:var(--cream);border:1px solid var(--line);padding:34px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.cal-head strong{font-family:var(--f-head);font-weight:400;font-size:1.3rem;text-transform:capitalize}
+.icon-btn{width:40px;height:40px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:1.1rem;display:grid;place-items:center;color:var(--ink)}
+.icon-btn:hover{border-color:var(--rose);color:var(--rose-t)}
+.icon-btn[disabled]{opacity:.3;cursor:default}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-dow{text-align:center;font-size:.64rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-bottom:8px}
+.day{aspect-ratio:1;border:1px solid transparent;background:transparent;cursor:pointer;font-size:.95rem;font-weight:500;color:var(--ink);position:relative}
+.day:hover:not([disabled]){border-color:var(--rose);background:var(--blush-2)}
+.day[disabled]{color:#BCC5BB;cursor:default}
+.day.has{background:var(--blush-2)}
+.day.has::after{content:"";position:absolute;bottom:16%;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--rose-d)}
+.day.sel{background:var(--ink);color:#fff;border-color:var(--ink)}
+.day.sel::after{background:var(--rose)}
+.day.today{box-shadow:inset 0 -2px 0 var(--rose)}
+.cal-legend{display:flex;gap:18px;margin-top:18px;font-size:.78rem;color:var(--ink-3)}
+.cal-legend i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--rose-d);margin-right:8px;vertical-align:middle}
+.times{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.time{border:1px solid var(--line);background:transparent;padding:13px 6px;cursor:pointer;font-size:.92rem;font-weight:600;letter-spacing:.06em;color:var(--ink)}
+.time:hover{border-color:var(--rose);background:var(--blush-2)}
+.time.sel{background:var(--ink);color:#fff}
+.empty{padding:26px;background:var(--greige);color:var(--ink-2);font-size:.95rem}
+.chosen{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--blush);padding:14px 18px;margin-bottom:24px;font-size:.95rem}
+@media (max-width:900px){.booker{grid-template-columns:1fr}}
+
+/* forms */
+.field{margin-bottom:18px}
+.field label,.lbl{display:block;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.field .muted{letter-spacing:.06em;text-transform:none;font-weight:400}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:0;padding:13px 15px;background:var(--paper);min-height:48px;font-size:.97rem}
+.field textarea{min-height:104px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--rose-d);background:#fff}
+.hint{font-size:.85rem;color:var(--ink-3);margin-top:6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{position:relative;cursor:pointer;margin:0}
+.seg input{position:absolute;opacity:0}
+.seg span{display:block;padding:11px 20px;border:1px solid var(--line);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.seg input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.seg input:focus-visible+span{outline:2px solid var(--rose-d);outline-offset:2px}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.89rem;color:var(--ink-2);margin:10px 0 22px}
+.check input{width:18px;height:18px;margin-top:3px;accent-color:var(--rose-d);flex:none}
+.form-msg{margin-top:14px;font-size:.9rem}
+.form-msg.err{color:var(--red)}
+.done .big{width:58px;height:58px;border:1px solid var(--rose);color:var(--rose-t);display:grid;place-items:center;margin-bottom:22px}
+.done h3{font-size:1.5rem}
+
+/* reviews */
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px}
+.score{display:flex;align-items:center;gap:16px}
+.score b{font-family:var(--f-head);font-size:2.6rem;font-weight:400;line-height:1;color:var(--ink)}
+.stars{color:var(--rose-d);letter-spacing:3px;font-size:1rem}
+.reviews{columns:3 320px;column-gap:24px}
+.review{break-inside:avoid;background:var(--greige);padding:38px 34px 32px;margin-bottom:24px;position:relative}
+.review::before{content:"“";position:absolute;top:6px;right:28px;left:auto;font-family:var(--f-head);font-size:4.2rem;color:var(--rose);line-height:1}
+.review .stars{position:relative;margin-bottom:12px}
+.review p{margin:14px 0 20px;white-space:pre-line;font-family:var(--f-head);font-style:italic;font-size:1.12rem;line-height:1.6;color:var(--ink)}
+.review footer{font-size:.68rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-3)}
+.review footer b{color:var(--ink-2);font-weight:600}
+.rate{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:6px}
+.rate input{position:absolute;opacity:0}
+.rate label{font-size:1.9rem;color:#D2DACE;cursor:pointer;line-height:1;margin:0;letter-spacing:0;text-transform:none}
+.rate input:checked~label,.rate label:hover,.rate label:hover~label{color:var(--rose-d)}
+.rate input:focus-visible+label{outline:2px solid var(--rose-d)}
+.rev-form{max-width:680px}
+details.rev-add summary{list-style:none;display:inline-flex}
+details.rev-add summary::-webkit-details-marker{display:none}
+details.rev-add[open] summary{margin-bottom:24px}
+
+/* articles */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.art{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--cream);border:1px solid var(--line);transition:border-color .25s}
+.art:hover{border-color:var(--rose)}
+.art-cover{aspect-ratio:16/10;background:var(--blush-2);display:grid;place-items:center;font-family:var(--f-head);font-style:italic;font-size:2.6rem;color:var(--rose-t);overflow:hidden}
+.art-cover img{width:100%;height:100%;object-fit:cover}
+.art-body{padding:28px;flex:1;display:flex;flex-direction:column}
+.art-body h3{font-size:1.24rem;margin:10px 0 .5em}
+.art-body p{font-size:.95rem;flex:1;margin:0}
+.art-date{font-size:.68rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--rose-t)}
+@media (max-width:980px){.art-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.art-grid{grid-template-columns:1fr}}
+.page-top{padding:72px 0 28px}
+.crumbs{font-size:.7rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-3);margin-bottom:20px}
+.crumbs a{color:var(--ink-3);text-decoration:none}
+.crumbs a:hover{color:var(--rose-t)}
+.article{max-width:760px}
+.article .art-cover{margin:10px 0 40px;aspect-ratio:16/9}
+.prose{font-size:1.06rem;line-height:1.85}
+.prose h2{font-size:1.7rem;margin-top:1.7em}
+.prose h3{margin-top:1.5em}
+.prose ul,.prose ol{padding-left:1.3em}
+.prose li{margin-bottom:.45em}
+.prose blockquote{margin:1.6em 0;padding:6px 0 6px 24px;border-left:1px solid var(--rose);font-family:var(--f-head);font-style:italic;font-size:1.25rem;color:var(--ink)}
+.note{background:var(--blush-2);padding:22px 26px;font-size:.93rem;margin:34px 0;border-left:3px solid var(--rose)}
+
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:24px 44px 24px 0;position:relative;font-family:var(--f-head);font-size:1.22rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:8px;top:22px;font-size:1.5rem;color:var(--rose-t);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:22px;font-size:.98rem;max-width:70ch}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.c-list{list-style:none;padding:0;margin:0;display:grid;gap:26px}
+.c-list li{display:grid;grid-template-columns:40px 1fr;gap:18px;align-items:start}
+.c-ico{width:40px;height:40px;border:1px solid var(--rose);display:grid;place-items:center;color:var(--rose-t)}
+.c-list a{color:var(--ink);text-decoration:none}
+.c-list a:hover{color:var(--rose-t)}
+.c-list small{display:block;color:var(--rose-t);font-size:.68rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;margin-bottom:4px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:14px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours td:last-child{text-align:right;color:var(--ink)}
+.hours tr.now td{color:var(--rose-t)}
+@media (max-width:860px){.contact{grid-template-columns:1fr;gap:40px}}
+
+/* closing CTA */
+.cta-band{background:var(--greige);padding:110px 0;text-align:center}
+.cta-band h2{max-width:20ch;margin:0 auto .4em}
+.cta-band p{max-width:52ch;margin:0 auto 34px}
+
+/* footer */
+.foot{background:var(--dark);color:#AFB8B0;padding:84px 0 32px;font-size:.93rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1fr;gap:44px;margin-bottom:56px}
+.foot h3{color:#fff;font-family:var(--f-body);font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:22px}
+.foot .logo{color:#fff}
+.foot .logo-mark,.foot .logo b{color:#fff}
+.foot .logo small{color:#87918A}
+.foot a{color:#D5DED3;text-decoration:none}
+.foot a:hover{color:var(--rose)}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.foot .lbl-s{display:block;color:var(--rose);font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:5px}
+.foot .c-block+.c-block{margin-top:20px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:26px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:.84rem;color:#87918A}
+.foot-bottom a{color:#87918A}
+.powered a{color:var(--rose);font-weight:600}
+@media (max-width:980px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.foot-grid{grid-template-columns:1fr;gap:34px}}
+
+/* legal */
+.legal{max-width:800px}
+.legal h2{font-size:1.5rem;margin-top:1.9em}
+.legal .box{background:var(--cream);border:1px solid var(--line);padding:22px 24px;margin:16px 0}
+.legal ul{padding-left:1.2em}
+.legal li{margin-bottom:.5em}
+
+/* cookie + toast + modal */
+.cookie{position:fixed;left:20px;right:20px;bottom:20px;z-index:80;max-width:580px;background:var(--dark);color:#D5DED3;padding:24px 26px;display:none}
+.cookie.show{display:block}
+.cookie p{margin:0 0 16px;font-size:.9rem}
+.cookie a{color:var(--rose)}
+.cookie .btns{display:flex;gap:10px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140px);background:var(--dark);color:#fff;padding:14px 26px;z-index:90;transition:transform .3s;font-size:.9rem;max-width:90vw;text-align:center}
+.toast.show{transform:translate(-50%,0)}
+.toast.err{background:var(--red)}
+.modal{position:fixed;inset:0;background:rgba(24,33,27,.5);display:grid;place-items:center;z-index:100;padding:20px}
+.modal[hidden]{display:none}
+.modal-box{background:var(--cream);padding:34px;max-width:450px;width:100%}
+.modal-box p{font-size:1.05rem;margin-bottom:26px;color:var(--ink)}
+.modal .btns{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+
+/* admin */
+.ad-login{max-width:440px;margin:40px auto}
+.ad-head{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between;margin-bottom:32px}
+.ad-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:32px}
+.stat{background:var(--cream);border:1px solid var(--line);padding:22px}
+.stat b{display:block;font-family:var(--f-head);font-size:2rem;font-weight:400;line-height:1.1;color:var(--ink)}
+.stat span{font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.stat.hot{background:var(--blush)}
+.stat.hot b{color:var(--rose-t)}
+@media (max-width:760px){.ad-stats{grid-template-columns:1fr 1fr}}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:28px}
+.tab{background:none;border:0;padding:14px 18px;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--rose)}
+.tab .count{display:inline-block;min-width:22px;padding:1px 7px;background:var(--rose);color:var(--ink);font-size:.7rem;margin-left:8px;letter-spacing:0}
+.pane{display:none}
+.pane.active{display:block}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px}
+.toolbar .spacer{flex:1}
+.chip{border:1px solid var(--line);background:var(--cream);padding:9px 16px;cursor:pointer;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.list{display:grid;gap:12px}
+.item{background:var(--cream);border:1px solid var(--line);padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start}
+.item h4{margin:6px 0 6px;font-size:1.15rem}
+.item .sub{font-size:.93rem;color:var(--ink-2)}
+.item .sub a{color:var(--rose-t)}
+.item .note-t{font-size:.93rem;background:var(--greige);padding:12px 14px;margin-top:12px;white-space:pre-line}
+.item .acts{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:340px}
+@media (max-width:660px){.item{grid-template-columns:1fr}.item .acts{justify-content:flex-start}}
+.badge{display:inline-block;padding:3px 11px;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;vertical-align:middle;margin-left:10px}
+.b-pending{background:var(--blush);color:var(--rose-t)}
+.b-confirmed{background:var(--ok-l);color:var(--ok)}
+.b-rejected{background:var(--red-l);color:var(--red)}
+.b-draft{background:var(--greige);color:var(--ink-3)}
+.when{font-family:var(--f-head);font-size:1.05rem;color:var(--ink)}
+.sched-row{display:grid;grid-template-columns:160px 70px 1fr 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.sched-row b{font-family:var(--f-body);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.sched-row input[type=time]{border:1px solid var(--line);padding:9px;min-height:42px;width:100%;background:var(--paper)}
+@media (max-width:600px){.sched-row{grid-template-columns:1fr 60px}}
+.blocked{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.blocked span{background:var(--cream);border:1px solid var(--line);padding:6px 8px 6px 14px;display:inline-flex;align-items:center;gap:8px;font-size:.88rem}
+.blocked button{border:0;background:var(--red-l);color:var(--red);width:24px;height:24px;cursor:pointer}
+.editor{background:var(--cream);border:1px solid var(--line);padding:30px;margin-bottom:24px}
+.fmt-help{font-size:.85rem;color:var(--ink-3);background:var(--greige);padding:12px 14px;margin-top:8px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#/" aria-label="Начало">
+      <span class="logo-mark" data-site="initials" aria-hidden="true">ИФ</span>
+      <span><b data-site="therapist">Име Фамилия</b><small data-site="role">Логопед</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основна навигация">
+      <a href="#/" data-scroll="about">За мен</a>
+      <a href="#/" data-scroll="services">Услуги</a>
+      <a href="#/" data-scroll="booking">Запис на час</a>
+      <a href="#/" data-scroll="reviews">Отзиви</a>
+      <a href="#/articles">Статии</a>
+      <a href="#/" data-scroll="contact">Контакти</a>
+    </nav>
+    <a class="btn btn-primary btn-cta" href="#/" data-scroll="booking">Запиши час</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="demo-bar" id="demoBar" hidden>Демо режим: данните се пазят само в този браузър. Вход за администратор: <b>admin@demo.bg</b> / <b>demo123</b></div>
+
+<main id="main">
+
+<!-- ================= HOME ================= -->
+<div class="view" data-view="home">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Не просто упражнения.<span class="italic-line">Ясна и спокойна реч.</span></h1>
+        <div class="rule"></div>
+        <p class="lead">Логопедична диагностика и терапия за деца и възрастни в <span data-site="city">Кърджали</span> – с <b>индивидуален план</b>, <b>ясни цели</b> и <b>упражнения за у дома</b>, защото напредъкът се гради между заниманията.</p>
+        <div class="kw"><span>Ранна диагностика</span><span>Звуци и артикулация</span><span>Езиково развитие</span><span>Четене и писане</span></div>
+        <a class="btn btn-primary btn-arrow" href="#/" data-scroll="booking">Запиши час</a>
+      </div>
+      <div class="hero-photo" id="portrait">
+        <div class="letters" aria-hidden="true"><span>Р</span><span>Ш</span><span>Л</span><span>С</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip-hold">
+    <div class="wrap">
+      <div class="strip">
+        <div class="f">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 24c4-7 10-10 16-10s12 3 16 10c-4 7-10 10-16 10s-12-3-16-10z"/><path d="M18 24h12M22 20v8"/></svg>
+          <h3>Артикулация</h3><p>Правилно произнасяне на звуците, които детето пропуска или заменя.</p>
+        </div>
+        <div class="f">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 34c0-10 3-20 12-20 6 0 10 4 10 10 0 5-3 8-7 8h-3"/><path d="M12 34h10"/></svg>
+          <h3>Езиково развитие</h3><p>Речник, изречения и разбиране на казаното от другите.</p>
+        </div>
+        <div class="f">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 24c3 0 3-6 6-6s3 12 6 12 3-14 6-14 3 10 6 10 3-6 6-6 3 4 6 4"/></svg>
+          <h3>Плавност на речта</h3><p>Спокоен ритъм и дишане при заекване, за деца и възрастни.</p>
+        </div>
+        <div class="f">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 14c-4-3-9-3-14-2v22c5-1 10-1 14 2 4-3 9-3 14-2V12c-5-1-10-1-14 2z"/><path d="M24 14v22"/></svg>
+          <h3>Четене и писане</h3><p>Подкрепа при дислексия и дисграфия в предучилищна и училищна възраст.</p>
+        </div>
+        <div class="f">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M30 12c-8 0-14 5-14 12 0 3 1 5 2 7l-2 7 8-3c2 1 4 1 6 1 8 0 14-5 14-12S38 12 30 12z"/></svg>
+          <h3>Подкрепа за родители</h3><p>Какво да правите у дома и как да подпомогнете речта всеки ден.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="band band-white" id="about">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">Моят подход</div>
+        <h2>Спокойна работа.<span class="italic-line">Видим напредък.</span></h2>
+        <p class="lead" data-site="bio">Логопед съм с опит в работата с деца и възрастни. Добрата терапия започва с доверие: детето трябва да се чувства спокойно, а родителят да знае какво правим и защо.</p>
+        <p>След първата консултация получавате ясно заключение и индивидуален план с конкретни цели. Работим с игри, картинки и упражнения, които продължавате и у дома.</p>
+        <ul class="creds" id="creds"></ul>
+      </div>
+      <div class="about-quote">
+        <p>Всяко дете говори, когато се почувства чуто. Моята работа е да създам точно това усещане – и след това да дам на речта инструментите ѝ.</p>
+        <cite data-site="therapist"></cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats"><div class="wrap" id="statsBand"></div></section>
+
+  <section class="band" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Услуги</div>
+        <h2>Терапия, съобразена с всяка възраст</h2>
+        <p class="lead">Ако не сте сигурни коя услуга ви трябва, запишете първа консултация. След нея ще знаете точно какви са следващите стъпки.</p>
+      </div>
+      <div class="services" id="servicesList"></div>
+    </div>
+  </section>
+
+  <section class="band band-ink">
+    <div class="wrap">
+      <div class="sec-head" style="text-align:center;margin:0 auto 52px">
+        <div class="eyebrow center">Как протича</div>
+        <h2>Пътят до свободната реч</h2>
+        <p class="lead" style="margin:0 auto">Всичко започва с разговор и завършва с резултат, който остава.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Първи разговор</h3><p>Изслушвам вас и детето, обсъждаме наблюденията и притесненията ви.</p></div>
+        <div class="step"><h3>Диагностика и план</h3><p>Оценка на речта и езика, следвана от индивидуален план с ясни цели и срокове.</p></div>
+        <div class="step"><h3>Занимания</h3><p>Редовни срещи с игрови упражнения и задачи за у дома между тях.</p></div>
+        <div class="step"><h3>Затвърждаване</h3><p>Проследяваме резултата, докато новите умения станат естествени.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-lilac" id="booking">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Запази час</div>
+        <h2>Изберете ден и свободен час</h2>
+        <p class="lead">Заетите часове не се показват. Ще се свържа с вас, за да потвърдя записването.</p>
+        <p class="muted" style="font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;margin-top:-4px" data-site="slotText"></p>
+      </div>
+      <div class="booker">
+        <div class="panel">
+          <div class="cal-head">
+            <button class="icon-btn" id="calPrev" aria-label="Предишен месец">‹</button>
+            <strong id="calMonth" aria-live="polite"></strong>
+            <button class="icon-btn" id="calNext" aria-label="Следващ месец">›</button>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+          <div class="cal-legend"><span><i></i>има свободни часове</span></div>
+        </div>
+        <div class="panel" id="bkSide">
+          <div id="bkTimes">
+            <h3 id="bkDateLabel">Изберете ден от календара</h3>
+            <div id="timeList"><div class="empty">Свободните часове за избрания ден ще се покажат тук.</div></div>
+          </div>
+          <form id="bkForm" hidden novalidate>
+            <div class="chosen"><span id="bkChosen"></span><button type="button" class="btn btn-line btn-sm" id="bkChange">Промяна</button></div>
+            <div class="field">
+              <label for="bkService">Услуга</label>
+              <select id="bkService" required></select>
+            </div>
+            <div class="field">
+              <span class="lbl">Записвам час за</span>
+              <div class="seg">
+                <label><input type="radio" name="forWhom" value="Дете" checked><span>Дете</span></label>
+                <label><input type="radio" name="forWhom" value="Себе си"><span>Себе си</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="bkName">Име и фамилия <span class="muted" id="bkNameHint">(на родителя)</span></label>
+              <input id="bkName" autocomplete="name" required maxlength="80">
+            </div>
+            <div class="row2">
+              <div class="field"><label for="bkPhone">Телефон</label><input id="bkPhone" type="tel" autocomplete="tel" required maxlength="30" placeholder="08X XXX XXXX"></div>
+              <div class="field"><label for="bkEmail">Имейл <span class="muted">(по желание)</span></label><input id="bkEmail" type="email" autocomplete="email" maxlength="120"></div>
+            </div>
+            <div class="field">
+              <label for="bkNote">Бележка <span class="muted">(по желание)</span></label>
+              <textarea id="bkNote" maxlength="500" placeholder="Напр. възраст на детето, удобен начин за връзка"></textarea>
+              <div class="hint">Моля, не описвайте здравословна информация тук. Ще я обсъдим лично на срещата.</div>
+            </div>
+            <input class="hp" id="bkWeb" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label class="check"><input type="checkbox" id="bkConsent" required><span>Запознат/а съм с <a href="#/privacy">Политиката за поверителност</a> и <a href="#/terms">Общите условия</a> и съм съгласен/а данните ми да бъдат използвани за записването на час.</span></label>
+            <button class="btn btn-primary" type="submit" id="bkSubmit">Изпрати заявка</button>
+            <div class="form-msg" id="bkMsg" role="alert"></div>
+          </form>
+          <div id="bkDone" class="done" hidden aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-white" id="reviews">
+    <div class="wrap">
+      <div class="rev-top">
+        <div>
+          <div class="eyebrow">Отзиви</div>
+          <h2>Какво казват родителите</h2>
+          <div class="score" id="revScore"></div>
+        </div>
+        <details class="rev-add" id="revAdd">
+          <summary class="btn btn-line">Напишете отзив</summary>
+        </details>
+      </div>
+      <form class="panel rev-form" id="revForm" hidden novalidate>
+        <h3>Вашият отзив</h3>
+        <div class="field">
+          <span class="lbl" id="rateLbl">Оценка</span>
+          <div class="rate" role="radiogroup" aria-labelledby="rateLbl">
+            <input type="radio" name="rating" id="r5" value="5" checked><label for="r5" aria-label="5 звезди">★</label>
+            <input type="radio" name="rating" id="r4" value="4"><label for="r4" aria-label="4 звезди">★</label>
+            <input type="radio" name="rating" id="r3" value="3"><label for="r3" aria-label="3 звезди">★</label>
+            <input type="radio" name="rating" id="r2" value="2"><label for="r2" aria-label="2 звезди">★</label>
+            <input type="radio" name="rating" id="r1" value="1"><label for="r1" aria-label="1 звезда">★</label>
+          </div>
+        </div>
+        <div class="field"><label for="revName">Име <span class="muted">(може и само малко име)</span></label><input id="revName" maxlength="60" required></div>
+        <div class="field"><label for="revText">Отзив</label><textarea id="revText" maxlength="800" required></textarea><div class="hint">Моля, не споделяйте здравословна информация за дете, по която то може да бъде разпознато.</div></div>
+        <input class="hp" id="revWeb" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="check"><input type="checkbox" id="revConsent" required><span>Съгласен/а съм отзивът и посоченото име да бъдат публикувани на сайта съгласно <a href="#/privacy">Политиката за поверителност</a>.</span></label>
+        <button class="btn btn-primary" type="submit" id="revSubmit">Изпрати отзив</button>
+        <div class="form-msg" id="revMsg" role="alert"></div>
+        <p class="hint" style="margin-top:16px">Отзивите се публикуват след преглед, за да се предотвратят спам и обидно съдържание. Публикуваме както положителни, така и критични мнения.</p>
+      </form>
+      <div class="reviews" id="revList" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="band" id="articlesHome">
+    <div class="wrap">
+      <div class="rev-top">
+        <div class="sec-head" style="margin:0">
+          <div class="eyebrow">Полезно вкъщи</div>
+          <h2>Статии за родители</h2>
+        </div>
+        <a class="link-more" href="#/articles">Виж всички статии</a>
+      </div>
+      <div class="art-grid" id="artHome"></div>
+    </div>
+  </section>
+
+  <section class="band band-blush" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><div class="eyebrow">Въпроси</div><h2>Това, което родителите питат най-често</h2></div>
+      <div class="faq">
+        <details><summary>На каква възраст да потърся логопед?</summary><p>Ако детето на 2 години почти не говори, на 3 години не се разбира от непознати или на 5 години все още не произнася правилно някои звуци, консултацията е добра идея. Колкото по-рано, толкова по-лесно.</p></details>
+        <details><summary>Колко продължава едно занимание?</summary><p>Обикновено между 30 и 45 минути, според възрастта и концентрацията на детето. Първата консултация може да е малко по-дълга.</p></details>
+        <details><summary>Колко занимания ще са нужни?</summary><p>Зависи от конкретното затруднение. След диагностиката ще получите план с ориентировъчен брой срещи и цели.</p></details>
+        <details><summary>Как да откажа или преместя час?</summary><p>Обадете се или пишете поне 24 часа предварително, за да може часът да бъде предложен на друго семейство.</p></details>
+        <details><summary>Трябва ли родителят да присъства?</summary><p>На първата среща – да. На следващите занимания решаваме заедно, според това кое е по-добре за детето.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-white" id="contact">
+    <div class="wrap contact">
+      <div>
+        <div class="eyebrow">Контакти</div>
+        <h2>Ще се радвам да ви посрещна</h2>
+        <ul class="c-list">
+          <li><span class="c-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Адрес</small><span data-site="address">ул. „Примерна“ № 1, гр. Кърджали</span><br><a id="mapLink" target="_blank" rel="noopener">Отвори в карта</a></div></li>
+          <li><span class="c-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Телефон</small><a data-tel></a></div></li>
+          <li><span class="c-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></svg></span><div><small>Имейл</small><a data-mail></a></div></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow">Работно време</div>
+        <table class="hours"><tbody id="hoursTable"></tbody></table>
+        <p class="muted" style="margin-top:18px;font-size:.9rem">Посещения само с предварително записан час.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div class="eyebrow center">Запази час</div>
+      <h2>Нека дадем на детето думите, които му трябват</h2>
+      <p>Първата стъпка е кратък разговор. След него ще знаете какво следва и колко време ще отнеме.</p>
+      <a class="btn btn-primary btn-arrow" href="#/" data-scroll="booking">Запиши час</a>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ARTICLES ================= -->
+<div class="view" data-view="articles">
+  <div class="page-top"><div class="wrap">
+    <div class="crumbs"><a href="#/">Начало</a> / Статии</div>
+    <h1>Статии</h1>
+    <p class="lead">Съвети за родители, упражнения за у дома и отговори на въпросите, които чувам най-често.</p>
+  </div></div>
+  <section class="band" style="padding-top:24px"><div class="wrap"><div class="art-grid" id="artAll"></div></div></section>
+</div>
+
+<div class="view" data-view="article">
+  <div class="page-top"><div class="wrap article" id="artView"></div></div>
+  <div style="height:64px"></div>
+</div>
+
+<!-- ================= PRIVACY ================= -->
+<div class="view" data-view="privacy">
+  <div class="page-top"><div class="wrap legal">
+    <div class="crumbs"><a href="#/">Начало</a> / Политика за поверителност</div>
+    <h1>Политика за поверителност</h1>
+    <p class="muted">В сила от: <span data-today></span>. Съгласно Регламент (ЕС) 2016/679 (GDPR) и Закона за защита на личните данни.</p>
+
+    <h2>1. Администратор на лични данни</h2>
+    <div class="box">
+      <p style="margin:0"><b data-site="company">[Име на фирма / ЕТ / самоосигуряващо се лице]</b><br>
+      ЕИК / БУЛСТАТ: <span data-site="eik">[въведете]</span><br>
+      Адрес: <span data-site="address"></span><br>
+      Телефон: <a data-tel></a> · Имейл: <a data-mail></a></p>
+    </div>
+
+    <h2>2. Какви данни събираме</h2>
+    <ul>
+      <li><b>При записване на час:</b> име, телефон, имейл (по желание), избрана услуга, дата и час, дали часът е за дете или за вас, и бележка (по желание).</li>
+      <li><b>При публикуване на отзив:</b> посоченото от вас име, оценка и текст.</li>
+      <li><b>Технически данни:</b> IP адрес и данни за браузъра, които хостинг доставчикът обработва автоматично за сигурност и работа на сайта.</li>
+    </ul>
+    <p>Чрез сайта <b>не събираме здравна информация</b>. Моля, не я въвеждайте в полетата. Информацията за речта и развитието се обсъжда само лично, по време на консултацията, и се съхранява отделно от сайта.</p>
+    <p>Когато записвате час за дете, вие като родител или законен представител предоставяте данните от негово име.</p>
+
+    <h2>3. Цели и правни основания</h2>
+    <ul>
+      <li><b>Записване и управление на часове</b> – предприемане на стъпки по ваше искане преди сключване на договор и изпълнение на договор (чл. 6, ал. 1, б. „б“ GDPR).</li>
+      <li><b>Публикуване на отзиви</b> – вашето съгласие (чл. 6, ал. 1, б. „а“ GDPR), което можете да оттеглите по всяко време.</li>
+      <li><b>Сигурност и защита от злоупотреби</b> – законен интерес (чл. 6, ал. 1, б. „е“ GDPR).</li>
+    </ul>
+
+    <h2>4. Получатели и обработващи</h2>
+    <p>Данните не се продават и не се предоставят за реклама. Използваме следните доставчици като обработващи лични данни:</p>
+    <ul>
+      <li><b>Google Firebase</b> (Google Ireland Ltd.) – база данни и вход за администратора. Данните се съхраняват в ЕС регион, когато е избран такъв. При евентуален трансфер извън ЕС се прилагат Рамката за защита на данните ЕС–САЩ и стандартни договорни клаузи.</li>
+      <li><b>GitHub Pages</b> (GitHub, Inc.) – хостинг на сайта. Обработва технически данни (IP адрес) за доставяне на страниците.</li>
+      <li><b>Bunny Fonts</b> (BunnyWay d.o.o., Словения) – шрифтове, без бисквитки и без проследяване.</li>
+    </ul>
+
+    <h2>5. Срок на съхранение</h2>
+    <ul>
+      <li>Заявки за час – до 12 месеца след датата на часа, след което се изтриват.</li>
+      <li>Отхвърлени заявки – до 30 дни.</li>
+      <li>Отзиви – докато сайтът е активен или докато не оттеглите съгласието си.</li>
+    </ul>
+
+    <h2>6. Вашите права</h2>
+    <p>Имате право на достъп, коригиране, изтриване, ограничаване на обработването, преносимост и възражение, както и да оттеглите съгласието си по всяко време, без това да засяга законосъобразността на обработването преди оттеглянето. За да упражните правата си, пишете на <a data-mail></a>. Отговаряме в срок до един месец.</p>
+
+    <h2>7. Право на жалба</h2>
+    <div class="box"><p style="margin:0"><b>Комисия за защита на личните данни (КЗЛД)</b><br>гр. София 1592, бул. „Проф. Цветан Лазаров“ № 2<br><a href="https://www.cpdp.bg" target="_blank" rel="noopener">www.cpdp.bg</a> · kzld@cpdp.bg</p></div>
+
+    <h2>8. Сигурност</h2>
+    <p>Данните от заявките са достъпни само за администратора след вход с парола. Публично се вижда единствено, че даден час е зает, без никакви лични данни.</p>
+
+    <h2>9. Промени</h2>
+    <p>Може да актуализираме тази политика. Актуалната версия винаги е публикувана на тази страница.</p>
+  </div></div>
+  <div style="height:64px"></div>
+</div>
+
+<!-- ================= COOKIES ================= -->
+<div class="view" data-view="cookies">
+  <div class="page-top"><div class="wrap legal">
+    <div class="crumbs"><a href="#/">Начало</a> / Политика за бисквитки</div>
+    <h1>Политика за бисквитки</h1>
+    <p class="muted">В сила от: <span data-today></span></p>
+    <p>Този сайт <b>не използва рекламни, аналитични или проследяващи бисквитки</b>. Използваме само технологии за локално съхранение, които са строго необходими за работата на сайта и за които не се изисква съгласие (чл. 4а, ал. 3 от Закона за електронните съобщения и чл. 5, ал. 3 от Директива 2002/58/ЕО).</p>
+    <h2>Какво съхраняваме на вашето устройство</h2>
+    <div class="box">
+      <p><b>cookie_notice</b> (localStorage) – запомня, че сте видели съобщението за бисквитки. Срок: до изтриване от вас.</p>
+      <p style="margin:0"><b>Сесия на администратора</b> (IndexedDB, Firebase Authentication) – използва се само ако администраторът влезе в системата. Посетителите не са засегнати.</p>
+    </div>
+    <h2>Външни услуги</h2>
+    <p>Шрифтовете се зареждат от Bunny Fonts (ЕС) без бисквитки. Картата се отваря само при кликване върху връзката „Отворете в карта“ и тогава се прилагат правилата на Google Maps.</p>
+    <h2>Как да изтриете данните</h2>
+    <p>Можете да изчистите локалните данни от настройките на браузъра си по всяко време.</p>
+  </div></div>
+  <div style="height:64px"></div>
+</div>
+
+<!-- ================= TERMS ================= -->
+<div class="view" data-view="terms">
+  <div class="page-top"><div class="wrap legal">
+    <div class="crumbs"><a href="#/">Начало</a> / Общи условия</div>
+    <h1>Общи условия</h1>
+    <p class="muted">В сила от: <span data-today></span></p>
+    <h2>1. Доставчик</h2>
+    <div class="box"><p style="margin:0"><b data-site="company"></b>, ЕИК <span data-site="eik"></span>, <span data-site="address"></span>. Телефон: <a data-tel></a>, имейл: <a data-mail></a>.</p></div>
+    <h2>2. Онлайн записване</h2>
+    <ul>
+      <li>Изпращането на заявка през сайта не е окончателно потвърждение. Часът се счита за записан, след като бъде потвърден по телефон или имейл.</li>
+      <li>Докато заявката се разглежда, избраният час е резервиран и не се показва на други посетители.</li>
+      <li>Администраторът може да откаже заявка, например при непълни данни или при невъзможност за провеждане на занятието.</li>
+    </ul>
+    <h2>3. Отказ и преместване</h2>
+    <p>Моля, уведомете ни поне 24 часа предварително, ако не можете да присъствате. При закъснение занятието може да бъде съкратено.</p>
+    <h2>4. Цени и плащане</h2>
+    <p>Актуалните цени се съобщават при записването или на място. Плащането се извършва в кабинета. Сайтът не приема онлайн плащания.</p>
+    <h2>5. Отзиви</h2>
+    <p>Отзивите се публикуват след преглед от администратора. Не публикуваме отзиви със спам, обидно или незаконно съдържание, лични данни на трети лица или здравна информация. Не се публикуват платени или стимулирани отзиви. Не можем да гарантираме, че всеки автор на отзив е ползвал услугите. Критичните мнения се публикуват наравно с положителните.</p>
+    <h2>6. Статии</h2>
+    <p>Статиите имат информативен характер и не заменят индивидуална консултация със специалист.</p>
+    <h2>7. Решаване на спорове</h2>
+    <p>Спорове се решават по взаимно съгласие. Потребителите могат да се обърнат към Комисията за защита на потребителите (<a href="https://kzp.bg" target="_blank" rel="noopener">kzp.bg</a>) и към секторните помирителни комисии за алтернативно решаване на спорове. Приложимо е българското право.</p>
+  </div></div>
+  <div style="height:64px"></div>
+</div>
+
+<!-- ================= ADMIN ================= -->
+<div class="view" data-view="admin">
+  <section class="band" style="padding-top:40px">
+    <div class="wrap">
+      <form class="panel ad-login" id="adLogin" novalidate>
+        <h1 style="font-size:1.6rem">Вход за администратор</h1>
+        <div class="field"><label for="adEmail">Имейл</label><input id="adEmail" type="email" autocomplete="username" required></div>
+        <div class="field"><label for="adPass">Парола</label><input id="adPass" type="password" autocomplete="current-password" required></div>
+        <button class="btn btn-primary" type="submit" id="adLoginBtn">Вход</button>
+        <div class="form-msg err" id="adLoginMsg" role="alert"></div>
+      </form>
+
+      <div id="adPanel" hidden>
+        <div class="ad-head">
+          <div><h1 style="font-size:1.8rem;margin:0">Администрация</h1><span class="muted" id="adUser"></span></div>
+          <div style="display:flex;gap:8px"><a class="btn btn-line btn-sm" href="#/">Към сайта</a><button class="btn btn-line btn-sm" id="adLogout">Изход</button></div>
+        </div>
+        <div class="ad-stats" id="adStats"></div>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" data-tab="bookings" aria-selected="true">Записвания<span class="count" id="cntBookings" hidden></span></button>
+          <button class="tab" role="tab" data-tab="reviews" aria-selected="false">Отзиви<span class="count" id="cntReviews" hidden></span></button>
+          <button class="tab" role="tab" data-tab="articles" aria-selected="false">Статии</button>
+          <button class="tab" role="tab" data-tab="schedule" aria-selected="false">Работно време</button>
+        </div>
+
+        <div class="pane active" data-pane="bookings">
+          <div class="toolbar" id="bkFilters">
+            <button class="chip on" data-f="upcoming">Предстоящи</button>
+            <button class="chip" data-f="pending">Чакащи</button>
+            <button class="chip" data-f="confirmed">Потвърдени</button>
+            <button class="chip" data-f="rejected">Отказани</button>
+            <button class="chip" data-f="past">Минали</button>
+            <button class="chip" data-f="all">Всички</button>
+            <span class="spacer"></span>
+            <input type="search" id="bkSearch" placeholder="Търсене по име или телефон" style="border:1.5px solid var(--line);border-radius:999px;padding:8px 14px;min-width:220px">
+            <button class="btn btn-primary btn-sm" id="adAddBtn">Добави запис</button>
+          </div>
+          <form class="editor" id="adAddForm" hidden novalidate>
+            <h3>Нов запис (напр. по телефона)</h3>
+            <div class="row2">
+              <div class="field"><label for="aaDate">Дата</label><input type="date" id="aaDate" required></div>
+              <div class="field"><label for="aaTime">Час</label><input type="time" id="aaTime" required step="300"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="aaName">Име</label><input id="aaName" required maxlength="80"></div>
+              <div class="field"><label for="aaPhone">Телефон</label><input id="aaPhone" required maxlength="30"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="aaService">Услуга</label><select id="aaService"></select></div>
+              <div class="field"><label for="aaEmail">Имейл</label><input id="aaEmail" type="email" maxlength="120"></div>
+            </div>
+            <div class="field"><label for="aaNote">Бележка</label><input id="aaNote" maxlength="500"></div>
+            <div style="display:flex;gap:8px"><button class="btn btn-primary" type="submit">Запазете записа</button><button class="btn btn-line" type="button" id="aaCancel">Отказ</button></div>
+            <div class="form-msg err" id="aaMsg" role="alert"></div>
+          </form>
+          <div class="list" id="adBookings"></div>
+        </div>
+
+        <div class="pane" data-pane="reviews">
+          <div class="toolbar" id="rvFilters">
+            <button class="chip on" data-f="pending">Чакащи одобрение</button>
+            <button class="chip" data-f="approved">Публикувани</button>
+            <button class="chip" data-f="hidden">Скрити</button>
+            <button class="chip" data-f="all">Всички</button>
+          </div>
+          <div class="list" id="adReviews"></div>
+        </div>
+
+        <div class="pane" data-pane="articles">
+          <div class="toolbar"><span class="spacer"></span><button class="btn btn-primary btn-sm" id="arNew">Нова статия</button></div>
+          <form class="editor" id="arForm" hidden novalidate>
+            <h3 id="arFormTitle">Нова статия</h3>
+            <div class="field"><label for="arTitle">Заглавие</label><input id="arTitle" required maxlength="140"></div>
+            <div class="field"><label for="arExcerpt">Кратко описание</label><input id="arExcerpt" maxlength="240"></div>
+            <div class="field"><label for="arCover">Снимка (линк към изображение, по желание)</label><input id="arCover" type="url" placeholder="https://..."><div class="hint">Използвайте снимки, за които имате права.</div></div>
+            <div class="field"><label for="arBody">Текст</label><textarea id="arBody" style="min-height:280px" required></textarea>
+              <div class="fmt-help">Форматиране: празен ред = нов абзац · <b>## Заглавие</b> · <b>**удебелен**</b> · <b>*курсив*</b> · ред, започващ с <b>- </b> = списък · <b>&gt; </b> = цитат · <b>[текст](https://линк)</b></div>
+            </div>
+            <label class="check"><input type="checkbox" id="arPub"><span>Публикувана (видима за посетителите)</span></label>
+            <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-primary" type="submit">Запазете статията</button><button class="btn btn-line" type="button" id="arCancel">Отказ</button></div>
+            <div class="form-msg err" id="arMsg" role="alert"></div>
+          </form>
+          <div class="list" id="adArticles"></div>
+        </div>
+
+        <div class="pane" data-pane="schedule">
+          <form class="editor" id="schForm">
+            <h3>Работни дни и часове</h3>
+            <div id="schDays"></div>
+            <div class="row2" style="margin-top:18px">
+              <div class="field"><label for="schSlot">Продължителност на един час</label>
+                <select id="schSlot"><option value="30">30 минути</option><option value="40">40 минути</option><option value="45">45 минути</option><option value="50">50 минути</option><option value="60">60 минути</option><option value="90">90 минути</option></select></div>
+              <div class="field"><label for="schAhead">Записване до (дни напред)</label><input id="schAhead" type="number" min="7" max="180"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="schMin">Минимум часове предварително</label><input id="schMin" type="number" min="0" max="72"><div class="hint">Напр. 2 = не може да се запише час, който започва след по-малко от 2 часа.</div></div>
+              <div class="field"><label for="schBreak">Почивка между часовете (минути)</label><input id="schBreak" type="number" min="0" max="60"></div>
+            </div>
+            <h3 style="margin-top:12px">Почивни дни и отпуски</h3>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input type="date" id="schBlockDate" style="border:1.5px solid var(--line);border-radius:10px;padding:8px;min-height:42px"><button type="button" class="btn btn-line btn-sm" id="schBlockAdd">Добави неработен ден</button></div>
+            <div class="blocked" id="schBlocked"></div>
+            <button class="btn btn-primary" type="submit" style="margin-top:10px">Запазете работното време</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#/"><span class="logo-mark" data-site="initials" aria-hidden="true"></span><span><b data-site="therapist"></b><small data-site="role"></small></span></a>
+        <p style="margin-top:22px;max-width:32ch">Логопедична диагностика и терапия на речта за деца и възрастни.</p>
+      </div>
+      <div>
+        <h3>Разгледай</h3>
+        <ul>
+          <li><a href="#/" data-scroll="about">За мен</a></li>
+          <li><a href="#/" data-scroll="services">Услуги</a></li>
+          <li><a href="#/" data-scroll="booking">Запис на час</a></li>
+          <li><a href="#/articles">Статии</a></li>
+          <li><a href="#/" data-scroll="contact">Контакти</a></li>
+          <li><a href="#/admin" rel="nofollow">Вход за администратор</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакти</h3>
+        <div class="c-block"><span class="lbl-s">Адрес</span><span data-site="address"></span></div>
+        <div class="c-block"><span class="lbl-s">Телефон</span><a data-tel></a></div>
+        <div class="c-block"><span class="lbl-s">Имейл</span><a data-mail></a></div>
+      </div>
+      <div>
+        <h3>Работно време</h3>
+        <ul id="hoursFoot"></ul>
+        <h3 style="margin-top:28px">Правна информация</h3>
+        <ul>
+          <li><a href="#/privacy">Поверителност</a></li>
+          <li><a href="#/cookies">Бисквитки</a></li>
+          <li><a href="#/terms">Общи условия</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year></span> <span data-site="company"></span>. Всички права запазени.</span>
+      <span class="powered">Powered by <a href="https://smartmenukj.com" target="_blank" rel="noopener">SmartMenuKJ</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden role="alertdialog" aria-modal="true" aria-labelledby="modalText"><div class="modal-box"><p id="modalText"></p><div class="btns"><button type="button" class="btn btn-line" id="modalNo">Отказ</button><button type="button" class="btn btn-primary" id="modalYes">Да</button></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Информация за бисквитки">
+  <p>Този сайт не използва проследяващи бисквитки. Съхраняваме само технически необходима информация. <a href="#/cookies">Научете повече</a></p>
+  <div class="btns"><button class="btn btn-primary btn-sm" id="cookieOk">Разбрах</button></div>
+</div>
+
+<script>
+
+(function(){
+"use strict";
+
+/* =====================================================================
+   1) CLIENT SETTINGS – edit these values for the therapist
+   ===================================================================== */
+const SITE = {
+  therapist: "Име Фамилия",
+  role: "Логопед",
+  city: "Кърджали",
+  address: "ул. „Примерна“ № 1, гр. Кърджали",
+  phone: "+359 88 000 0000",
+  email: "info@example.bg",
+  company: "Име на фирма / ЕТ",
+  eik: "000000000",
+  policyDate: "17.09.2026",   // date the legal pages take effect
+  photo: "",                  // e.g. "photo.jpg" placed next to index.html
+  bio: "",                    // optional: replaces the intro text in "За мен"
+  stats: [                    // shown in the blush band; edit or delete entries
+    { big: "10+", small: "години практика" },
+    { big: "300+", small: "деца и възрастни" },
+    { big: "Индивидуален", small: "план за всеки" },
+    { big: "Кърджали", small: "ул. „Примерна“ № 1" }
+  ],
+  credentials: [
+    "Магистър по логопедия",
+    "Работа с деца от 2 години, ученици и възрастни",
+    "Индивидуален план и домашни упражнения след всяко занимание"
+  ],
+  services: [
+    { mark:"Дд", name:"Първа консултация и диагностика", desc:"Оценка на речта, езика и слуховото внимание. Получавате ясно заключение и препоръки.", price:"" },
+    { mark:"Зз", name:"Правилно произнасяне на звуци", desc:"Работа по звуци като Р, Л, С, Ш, Ж и Ц, когато детето ги пропуска, заменя или изговаря неточно.", price:"" },
+    { mark:"Ее", name:"Забавено езиково развитие", desc:"За деца, които говорят малко, трудно съставят изречения или не разбират добре инструкции.", price:"" },
+    { mark:"Пп", name:"Плавност на речта (заекване)", desc:"Техники за по-спокойна и плавна реч за деца и възрастни, с включване на семейството.", price:"" },
+    { mark:"Чч", name:"Затруднения в четенето и писането", desc:"Подкрепа при дислексия и дисграфия: разпознаване на букви, четене с разбиране и правопис.", price:"" },
+    { mark:"Рр", name:"Консултация за родители", desc:"Как да подкрепите речта на детето у дома с ежедневни игри и прости упражнения.", price:"" }
+  ]
+};
+
+/* =====================================================================
+   2) FIREBASE – paste the config from Firebase Console → Project settings.
+      Leave as null to run the site in DEMO mode (data stays in the browser).
+   ===================================================================== */
+const FIREBASE_CONFIG = null;
+/* Example:
+const FIREBASE_CONFIG = {
+  apiKey: "AIza...",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "1234567890",
+  appId: "1:1234567890:web:abc123"
+};
+*/
+const FIREBASE_VERSION = "10.12.2";
+
+const DEFAULT_SCHEDULE = {
+  slot: 45, brk: 15, ahead: 60, minHours: 2,
+  days: {
+    "1": { on: true,  start: "09:00", end: "18:00" },
+    "2": { on: true,  start: "09:00", end: "18:00" },
+    "3": { on: true,  start: "09:00", end: "18:00" },
+    "4": { on: true,  start: "09:00", end: "18:00" },
+    "5": { on: true,  start: "09:00", end: "16:00" },
+    "6": { on: false, start: "10:00", end: "14:00" },
+    "0": { on: false, start: "10:00", end: "14:00" }
+  },
+  blocked: []
+};
+
+/* =====================================================================
+   3) HELPERS
+   ===================================================================== */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const pad = n => String(n).padStart(2, "0");
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const parseYmd = s => { const p = String(s).split("-").map(Number); return new Date(p[0], p[1] - 1, p[2]); };
+const toMin = t => { const p = String(t).split(":").map(Number); return p[0] * 60 + (p[1] || 0); };
+const fromMin = m => `${pad(Math.floor(m / 60))}:${pad(m % 60)}`;
+const slotId = (date, time) => `${date}_${String(time).replace(":", "-")}`;
+const tsMs = v => (v && typeof v.toMillis === "function") ? v.toMillis() : (typeof v === "number" ? v : Date.now());
+const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+const MONTHS = ["януари","февруари","март","април","май","юни","юли","август","септември","октомври","ноември","декември"];
+const DOW_SHORT = ["Пн","Вт","Ср","Чт","Пт","Сб","Нд"];
+const DOW_FULL = ["неделя","понеделник","вторник","сряда","четвъртък","петък","събота"];
+const DAY_ORDER = ["1","2","3","4","5","6","0"];
+const fmtDate = s => { const d = parseYmd(s); return `${DOW_FULL[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; };
+const fmtShort = v => { const d = new Date(tsMs(v)); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; };
+const fmtDT = v => { const d = new Date(tsMs(v)); return `${d.getDate()}.${pad(d.getMonth() + 1)}.${d.getFullYear()} в ${pad(d.getHours())}:${pad(d.getMinutes())}`; };
+const startTs = b => { const d = parseYmd(b.date); const t = toMin(b.time); return new Date(d.getFullYear(), d.getMonth(), d.getDate(), Math.floor(t / 60), t % 60).getTime(); };
+const safeUrl = u => { u = String(u || "").trim(); return /^https?:\/\//i.test(u) ? u : ""; };
+const stars = n => { const r = Math.max(0, Math.min(5, Math.round(+n || 0))); return "★".repeat(r) + "☆".repeat(5 - r); };
+const plain = s => String(s || "").replace(/[#*>\[\]()_`-]/g, "").replace(/\s+/g, " ").trim();
+const PHONE_RE = /^\+?[\d\s\-()\/]{6,30}$/;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+let toastTimer;
+function toast(msg, err) {
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.toggle("err", !!err);
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 3800);
+}
+function setMsg(el, text, isErr) { el.textContent = text || ""; el.className = "form-msg" + (isErr ? " err" : ""); }
+
+/* In-page confirmation dialog (browser confirm() is blocked in some embeds) */
+function ask(text, yesLabel) {
+  return new Promise(resolve => {
+    const m = $("#modal"), yes = $("#modalYes"), no = $("#modalNo");
+    const prev = document.activeElement;
+    $("#modalText").textContent = text;
+    yes.textContent = yesLabel || "Да";
+    m.hidden = false;
+    yes.focus();
+    const done = v => {
+      m.hidden = true;
+      yes.onclick = no.onclick = m.onclick = null;
+      document.removeEventListener("keydown", key);
+      if (prev && prev.isConnected && prev.focus) prev.focus();
+      resolve(v);
+    };
+    const key = e => {
+      if (e.key === "Escape") done(false);
+      if (e.key === "Tab") { e.preventDefault(); (document.activeElement === yes ? no : yes).focus(); }
+    };
+    yes.onclick = () => done(true);
+    no.onclick = () => done(false);
+    m.onclick = e => { if (e.target === m) done(false); };
+    document.addEventListener("keydown", key);
+  });
+}
+
+/* Tiny, safe Markdown → HTML (input is escaped first) */
+function md(src) {
+  const lines = String(src || "").replace(/\r/g, "").split("\n");
+  let html = "", para = [], list = null, quote = [];
+  const inline = t => esc(t)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  const flush = () => {
+    if (para.length) { html += `<p>${inline(para.join(" "))}</p>`; para = []; }
+    if (list) { html += `<${list.t}>${list.items.map(i => `<li>${inline(i)}</li>`).join("")}</${list.t}>`; list = null; }
+    if (quote.length) { html += `<blockquote>${inline(quote.join(" "))}</blockquote>`; quote = []; }
+  };
+  for (const raw of lines) {
+    const l = raw.trim();
+    let m;
+    if (!l) { flush(); continue; }
+    if ((m = l.match(/^(#{2,3})\s+(.*)/))) { flush(); const lv = m[1].length; html += `<h${lv}>${inline(m[2])}</h${lv}>`; continue; }
+    if ((m = l.match(/^[-•]\s+(.*)/))) { if (para.length || quote.length || (list && list.t !== "ul")) flush(); list = list || { t: "ul", items: [] }; list.items.push(m[1]); continue; }
+    if ((m = l.match(/^\d+[.)]\s+(.*)/))) { if (para.length || quote.length || (list && list.t !== "ol")) flush(); list = list || { t: "ol", items: [] }; list.items.push(m[1]); continue; }
+    if ((m = l.match(/^>\s?(.*)/))) { if (para.length || list) flush(); quote.push(m[1]); continue; }
+    if (list || quote.length) flush();
+    para.push(l);
+  }
+  flush();
+  return html;
+}
+
+function normSched(s) {
+  const d = DEFAULT_SCHEDULE; s = s || {};
+  const days = {};
+  DAY_ORDER.forEach(k => { days[k] = Object.assign({}, d.days[k], (s.days || {})[k] || {}); });
+  return {
+    slot: +s.slot || d.slot,
+    brk: s.brk != null ? Math.max(0, +s.brk) : d.brk,
+    ahead: +s.ahead || d.ahead,
+    minHours: s.minHours != null ? Math.max(0, +s.minHours) : d.minHours,
+    days,
+    blocked: Array.isArray(s.blocked) ? s.blocked.slice().sort() : []
+  };
+}
+
+/* =====================================================================
+   4) DATA LAYER – DEMO (localStorage)
+   ===================================================================== */
+function LocalDB() {
+  const KEY = "logoped_demo_v1";
+  let data;
+  const subs = {};
+  const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+
+  function seed() {
+    const now = Date.now(), day = 864e5;
+    const next = n => { const d = new Date(); let c = 0; while (true) { d.setDate(d.getDate() + 1); if (d.getDay() > 0 && d.getDay() < 6 && ++c === n) return ymd(d); } };
+    const s = { settings: DEFAULT_SCHEDULE, bookings: {}, slots: {}, reviews: {}, articles: {} };
+    const addB = (id, b) => { s.bookings[id] = Object.assign({ consent: true, createdAt: now - day }, b, { slotId: slotId(b.date, b.time) }); s.slots[slotId(b.date, b.time)] = { date: b.date, time: b.time, bookingId: id, createdAt: now }; };
+    addB("demo1", { name: "Елена Петрова", phone: "+359 88 111 2233", email: "elena@example.bg", service: SITE.services[0].name, forWhom: "Дете", note: "Синът ми е на 4 години.", date: next(1), time: "10:00", status: "pending" });
+    addB("demo2", { name: "Иван Георгиев", phone: "+359 87 444 5566", email: "", service: SITE.services[1].name, forWhom: "Дете", note: "", date: next(1), time: "11:00", status: "confirmed" });
+    addB("demo3", { name: "Мария Димитрова", phone: "+359 89 777 8899", email: "maria@example.bg", service: SITE.services[3].name, forWhom: "Себе си", note: "Предпочитам следобед.", date: next(2), time: "14:00", status: "pending" });
+    s.reviews.r1 = { name: "Десислава", rating: 5, text: "За три месеца дъщеря ми започна да казва Р. Занятията са като игра и тя всеки път иска да ходи.", status: "approved", consent: true, createdAt: now - 20 * day };
+    s.reviews.r2 = { name: "Николай К.", rating: 5, text: "Много спокоен и внимателен подход. Получихме ясен план и упражнения за вкъщи.", status: "approved", consent: true, createdAt: now - 9 * day };
+    s.reviews.r3 = { name: "Анета", rating: 4, text: "Доволни сме от напредъка. Понякога е трудно да се намери свободен час, но си заслужава.", status: "approved", consent: true, createdAt: now - 4 * day };
+    s.reviews.r4 = { name: "Светла", rating: 5, text: "Благодарим за търпението и добрите съвети!", status: "pending", consent: true, createdAt: now - 3600e3 };
+    s.articles.a1 = { title: "Кога детето трябва да започне да говори?", excerpt: "Ориентировъчни етапи в развитието на речта от 1 до 5 години и кога да потърсите консултация.", cover: "", published: true, createdAt: now - 30 * day, updatedAt: now - 30 * day,
+      body: "Всяко дете се развива със собствено темпо, но има ориентири, които помагат на родителите да преценят кога е добре да се консултират със специалист.\n\n## Ориентировъчни етапи\n\n- **Около 1 година** – първи думи като „мама“ и „татко“.\n- **Около 2 години** – поне 50 думи и първи изречения от две думи.\n- **Около 3 години** – кратки изречения, които непознати хора разбират в голямата си част.\n- **Около 5 години** – правилно произнасяне на повечето звуци, включително Р.\n\n## Кога да потърсите логопед\n\nАко детето на 2 години почти не използва думи, ако на 3 години трудно се разбира или ако на 5 години все още заменя звуци, консултацията е добра стъпка.\n\n> Ранната подкрепа прави работата по-лесна и по-кратка.\n\nНай-важното е да говорите с детето често, да четете заедно и да слушате търпеливо." };
+    s.articles.a2 = { title: "Пет игри за звука Р у дома", excerpt: "Кратки игри, които може да правите всеки ден, за да подготвите езика за звука Р.", cover: "", published: true, createdAt: now - 12 * day, updatedAt: now - 12 * day,
+      body: "Звукът Р е един от най-трудните за децата. Преди да се появи, езикът трябва да стане по-силен и по-подвижен. Ето няколко игри за 5 минути на ден.\n\n1. **Кончето** – цъкайте с език като конче, което тича.\n2. **Моторът** – опитайте се да „запалите мотор“ с устни: брррр.\n3. **Барабанчето** – почуквайте с върха на езика зад горните зъби: д-д-д.\n4. **Художникът** – „боядисайте“ небцето с върха на езика отпред назад.\n5. **Гъбката** – залепете езика за небцето и отворете устата широко.\n\n## Важно\n\nИграйте, докато на детето му е забавно. Ако звукът не се появи или се изговаря гърлено, по-добре е да се консултирате със специалист." };
+    return s;
+  }
+  function load() { try { data = JSON.parse(localStorage.getItem(KEY)); } catch (e) { data = null; } if (!data || !data.bookings) data = seed(); }
+  function emitAll() { Object.keys(subs).forEach(k => (subs[k] || []).forEach(f => f())); }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {} emitAll(); }
+  function on(k, f) { (subs[k] = subs[k] || []).push(f); f(); return () => { subs[k] = subs[k].filter(x => x !== f); }; }
+  const rows = obj => Object.keys(obj).map(id => Object.assign({ id }, obj[id]));
+
+  load();
+  window.addEventListener("storage", e => { if (e.key === KEY) { load(); emitAll(); } });
+  let user = null; const authSubs = [];
+  try { if (sessionStorage.getItem("demo_admin")) user = { email: "admin@demo.bg" }; } catch (e) {}
+
+  return {
+    mode: "demo",
+    watchSettings: cb => on("settings", () => cb(data.settings)),
+    saveSettings: async s => { data.settings = s; save(); },
+    watchSlots: (from, to, cb) => on("slots", () => cb(new Set(Object.keys(data.slots).filter(id => data.slots[id].date >= from && data.slots[id].date <= to)))),
+    createBooking: async (b, asAdmin) => {
+      const sid = slotId(b.date, b.time);
+      if (data.slots[sid]) throw new Error("taken");
+      const id = uid();
+      data.bookings[id] = Object.assign({}, b, { slotId: sid, status: asAdmin ? "confirmed" : "pending", createdAt: Date.now() });
+      data.slots[sid] = { date: b.date, time: b.time, bookingId: id, createdAt: Date.now() };
+      save(); return id;
+    },
+    watchBookings: cb => on("bookings", () => cb(rows(data.bookings))),
+    setBookingStatus: async (b, status) => {
+      const cur = data.bookings[b.id]; if (!cur) return;
+      const s = data.slots[cur.slotId];
+      if (status === "rejected") { if (s && s.bookingId === b.id) delete data.slots[cur.slotId]; }
+      else {
+        if (s && s.bookingId !== b.id) throw new Error("taken");
+        if (!s) data.slots[cur.slotId] = { date: cur.date, time: cur.time, bookingId: b.id, createdAt: Date.now() };
+      }
+      cur.status = status; save();
+    },
+    deleteBooking: async b => {
+      const cur = data.bookings[b.id]; if (!cur) return;
+      const s = data.slots[cur.slotId];
+      if (s && s.bookingId === b.id) delete data.slots[cur.slotId];
+      delete data.bookings[b.id]; save();
+    },
+    watchReviews: (all, cb) => on("reviews", () => cb(rows(data.reviews).filter(r => all || r.status === "approved"))),
+    addReview: async r => { data.reviews[uid()] = Object.assign({}, r, { status: "pending", createdAt: Date.now() }); save(); },
+    setReviewStatus: async (id, st) => { if (data.reviews[id]) { data.reviews[id].status = st; save(); } },
+    deleteReview: async id => { delete data.reviews[id]; save(); },
+    watchArticles: (all, cb) => on("articles", () => cb(rows(data.articles).filter(a => all || a.published))),
+    getArticle: async (id, all) => { const a = data.articles[id]; return (a && (a.published || all)) ? Object.assign({ id }, a) : null; },
+    saveArticle: async a => {
+      const id = a.id || uid(); const prev = data.articles[id] || {};
+      data.articles[id] = { title: a.title, excerpt: a.excerpt, cover: a.cover, body: a.body, published: !!a.published, createdAt: prev.createdAt || Date.now(), updatedAt: Date.now() };
+      save(); return id;
+    },
+    deleteArticle: async id => { delete data.articles[id]; save(); },
+    onAuth: cb => { authSubs.push(cb); cb(user, !!user); },
+    login: async (email, pw) => {
+      if (String(email).trim().toLowerCase() === "admin@demo.bg" && pw === "demo123") {
+        user = { email: "admin@demo.bg" };
+        try { sessionStorage.setItem("demo_admin", "1"); } catch (e) {}
+        authSubs.forEach(f => f(user, true));
+      } else throw new Error("auth");
+    },
+    logout: async () => { user = null; try { sessionStorage.removeItem("demo_admin"); } catch (e) {} authSubs.forEach(f => f(null, false)); }
+  };
+}
+
+/* =====================================================================
+   5) DATA LAYER – FIREBASE (Firestore + Auth)
+   ===================================================================== */
+async function FirebaseDB(cfg) {
+  const base = `https://www.gstatic.com/firebasejs/${FIREBASE_VERSION}/`;
+  const [A, F, U] = await Promise.all([
+    import(base + "firebase-app.js"),
+    import(base + "firebase-firestore.js"),
+    import(base + "firebase-auth.js")
+  ]);
+  const app = A.initializeApp(cfg);
+  const db = F.getFirestore(app);
+  const auth = U.getAuth(app);
+  const col = n => F.collection(db, n);
+  const ref = (c, id) => F.doc(db, c, id);
+  const rows = snap => snap.docs.map(d => Object.assign({ id: d.id }, d.data()));
+  const logErr = e => console.error("[Firestore]", e);
+
+  return {
+    mode: "firebase",
+    watchSettings: cb => F.onSnapshot(ref("settings", "schedule"), s => cb(s.exists() ? s.data() : null), e => { logErr(e); cb(null); }),
+    saveSettings: s => F.setDoc(ref("settings", "schedule"), s),
+    watchSlots: (from, to, cb) => F.onSnapshot(
+      F.query(col("slots"), F.where("date", ">=", from), F.where("date", "<=", to)),
+      s => cb(new Set(s.docs.map(d => d.id))), logErr),
+    createBooking: async (b, asAdmin) => {
+      const sid = slotId(b.date, b.time);
+      const sRef = ref("slots", sid);
+      const bRef = F.doc(col("bookings"));
+      const existing = await F.getDoc(sRef);
+      if (existing.exists()) throw new Error("taken");
+      const batch = F.writeBatch(db);
+      batch.set(bRef, Object.assign({}, b, { slotId: sid, status: asAdmin ? "confirmed" : "pending", createdAt: F.serverTimestamp() }));
+      batch.set(sRef, { date: b.date, time: b.time, bookingId: bRef.id, createdAt: F.serverTimestamp() });
+      try { await batch.commit(); }
+      catch (e) {
+        const again = await F.getDoc(sRef).catch(() => null);
+        if (again && again.exists()) throw new Error("taken");
+        throw e;
+      }
+      return bRef.id;
+    },
+    watchBookings: cb => F.onSnapshot(col("bookings"), s => cb(rows(s)), logErr),
+    setBookingStatus: async (b, status) => {
+      const sRef = ref("slots", b.slotId);
+      const s = await F.getDoc(sRef);
+      const batch = F.writeBatch(db);
+      if (status === "rejected") {
+        if (s.exists() && s.data().bookingId === b.id) batch.delete(sRef);
+      } else {
+        if (s.exists() && s.data().bookingId !== b.id) throw new Error("taken");
+        if (!s.exists()) batch.set(sRef, { date: b.date, time: b.time, bookingId: b.id, createdAt: F.serverTimestamp() });
+      }
+      batch.update(ref("bookings", b.id), { status });
+      await batch.commit();
+    },
+    deleteBooking: async b => {
+      const batch = F.writeBatch(db);
+      if (b.slotId) {
+        const s = await F.getDoc(ref("slots", b.slotId));
+        if (s.exists() && s.data().bookingId === b.id) batch.delete(ref("slots", b.slotId));
+      }
+      batch.delete(ref("bookings", b.id));
+      await batch.commit();
+    },
+    watchReviews: (all, cb) => F.onSnapshot(
+      all ? col("reviews") : F.query(col("reviews"), F.where("status", "==", "approved")),
+      s => cb(rows(s)), e => { logErr(e); cb([]); }),
+    addReview: r => F.addDoc(col("reviews"), Object.assign({}, r, { status: "pending", createdAt: F.serverTimestamp() })),
+    setReviewStatus: (id, st) => F.updateDoc(ref("reviews", id), { status: st }),
+    deleteReview: id => F.deleteDoc(ref("reviews", id)),
+    watchArticles: (all, cb) => F.onSnapshot(
+      all ? col("articles") : F.query(col("articles"), F.where("published", "==", true)),
+      s => cb(rows(s)), e => { logErr(e); cb([]); }),
+    getArticle: async id => {
+      try { const s = await F.getDoc(ref("articles", id)); return s.exists() ? Object.assign({ id: s.id }, s.data()) : null; }
+      catch (e) { return null; }
+    },
+    saveArticle: async a => {
+      const d = { title: a.title, excerpt: a.excerpt, cover: a.cover, body: a.body, published: !!a.published, updatedAt: F.serverTimestamp() };
+      if (a.id) { await F.updateDoc(ref("articles", a.id), d); return a.id; }
+      d.createdAt = F.serverTimestamp();
+      const r = await F.addDoc(col("articles"), d);
+      return r.id;
+    },
+    deleteArticle: id => F.deleteDoc(ref("articles", id)),
+    onAuth: cb => U.onAuthStateChanged(auth, async u => {
+      if (!u) { cb(null, false); return; }
+      let ok = false;
+      try { ok = (await F.getDoc(ref("admins", u.uid))).exists(); } catch (e) { logErr(e); }
+      cb(u, ok);
+    }),
+    login: (email, pw) => U.signInWithEmailAndPassword(auth, email, pw),
+    logout: () => U.signOut(auth)
+  };
+}
+
+/* =====================================================================
+   6) APP STATE
+   ===================================================================== */
+let DB = null;
+let schedule = normSched(null);
+let taken = new Set();
+let calMonth = new Date(); calMonth.setDate(1);
+let selDate = null, selTime = null, submitting = false;
+let pendingScroll = null, currentArticleId = null;
+let authUser = null, isAdmin = false, adminUnsubs = [];
+let allBookings = [], allReviews = [], allArticles = [], pubArticles = [];
+let bkFilter = "upcoming", rvFilter = "pending", editingArticle = null, schedDraft = null;
+const STATUS = { pending: "Чака потвърждение", confirmed: "Потвърден", rejected: "Отказан" };
+const RSTATUS = { pending: "Чака одобрение", approved: "Публикуван", hidden: "Скрит" };
+
+/* =====================================================================
+   7) STATIC CONTENT FROM SETTINGS
+   ===================================================================== */
+function applySite() {
+  $$("[data-site]").forEach(el => {
+    const k = el.dataset.site;
+    if (k === "initials") el.textContent = SITE.therapist.split(/\s+/).map(w => w.charAt(0)).join("").slice(0, 2).toUpperCase();
+    else if (k === "bio") { if (SITE.bio) el.textContent = SITE.bio; }
+    else if (k === "slotText") return;
+    else if (SITE[k] != null) el.textContent = SITE[k];
+  });
+  $$("[data-tel]").forEach(a => { a.textContent = SITE.phone; a.href = "tel:" + SITE.phone.replace(/[^\d+]/g, ""); });
+  $$("[data-mail]").forEach(a => { a.textContent = SITE.email; a.href = "mailto:" + SITE.email; });
+  $("#mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(SITE.address);
+  $$("[data-year]").forEach(e => { e.textContent = new Date().getFullYear(); });
+  $$("[data-today]").forEach(e => { e.textContent = SITE.policyDate; });
+  if (SITE.photo) $("#portrait").innerHTML = `<img src="${esc(SITE.photo)}" alt="${esc(SITE.role + " " + SITE.therapist)}">`;
+  $("#creds").innerHTML = SITE.credentials.map(c => `<li>${esc(c)}</li>`).join("");
+
+  $("#servicesList").innerHTML = SITE.services.map(s =>
+    `<article class="svc"><span class="svc-ico" aria-hidden="true">${esc(s.mark)}</span><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p>${s.price ? `<div class="meta">Цена: ${esc(s.price)}</div>` : ""}</article>`
+  ).join("");
+  const sb = $("#statsBand");
+  if (sb) sb.innerHTML = (SITE.stats || []).map(s => `<div class="s"><b>${esc(s.big)}</b><span>${esc(s.small)}</span></div>`).join("");
+  const opts = SITE.services.map(s => `<option>${esc(s.name)}</option>`).join("");
+  $("#bkService").innerHTML = opts;
+  $("#aaService").innerHTML = opts;
+
+  const ld = document.createElement("script");
+  ld.type = "application/ld+json";
+  ld.textContent = JSON.stringify({
+    "@context": "https://schema.org", "@type": "LocalBusiness",
+    name: `${SITE.role} ${SITE.therapist}`, telephone: SITE.phone, email: SITE.email,
+    address: { "@type": "PostalAddress", streetAddress: SITE.address, addressLocality: SITE.city, addressCountry: "BG" },
+    url: location.origin + location.pathname
+  });
+  document.head.appendChild(ld);
+}
+
+function renderHours() {
+  const today = String(new Date().getDay());
+  $("#hoursTable").innerHTML = DAY_ORDER.map(k => {
+    const d = schedule.days[k];
+    return `<tr class="${k === today ? "now" : ""}"><td>${cap(DOW_FULL[+k])}</td><td>${d.on ? `${d.start} – ${d.end}` : "Почивен ден"}</td></tr>`;
+  }).join("");
+  const st = $("[data-site=slotText]");
+  if (st) st.textContent = `Занимания по ${schedule.slot} минути`;
+  const hf = $("#hoursFoot");
+  if (hf) {
+    const groups = [];
+    DAY_ORDER.forEach(k => {
+      const d = schedule.days[k];
+      const val = d.on ? `${d.start} – ${d.end}` : "Затворено";
+      const last = groups[groups.length - 1];
+      if (last && last.val === val) last.to = +k;
+      else groups.push({ from: +k, to: +k, val });
+    });
+    hf.innerHTML = groups.map(g => {
+      const label = g.from === g.to ? cap(DOW_FULL[g.from]) : `${cap(DOW_FULL[g.from])} – ${cap(DOW_FULL[g.to])}`;
+      return `<li><span class="lbl-s">${label}</span>${g.val}</li>`;
+    }).join("");
+  }
+}
+
+/* =====================================================================
+   8) BOOKING
+   ===================================================================== */
+function daySlots(ds) {
+  const d = parseYmd(ds);
+  const cfg = schedule.days[String(d.getDay())];
+  if (!cfg || !cfg.on || schedule.blocked.includes(ds)) return [];
+  const out = [], step = schedule.slot + schedule.brk, end = toMin(cfg.end);
+  if (step <= 0) return out;
+  for (let m = toMin(cfg.start); m + schedule.slot <= end; m += step) out.push(fromMin(m));
+  return out;
+}
+function freeSlots(ds) {
+  const minTs = Date.now() + schedule.minHours * 3600e3;
+  return daySlots(ds).filter(t => startTs({ date: ds, time: t }) >= minTs && !taken.has(slotId(ds, t)));
+}
+function maxDate() { const m = new Date(); m.setDate(m.getDate() + schedule.ahead); return m; }
+function inRange(ds) { return ds >= ymd(new Date()) && ds <= ymd(maxDate()); }
+
+let slotUnsub = null, slotRange = "";
+function watchSlots() {
+  if (!DB) return;
+  const from = ymd(new Date()), to = ymd(maxDate());
+  if (slotRange === from + to) return;
+  slotRange = from + to;
+  if (slotUnsub) slotUnsub();
+  slotUnsub = DB.watchSlots(from, to, set => { taken = set; renderCal(); renderTimes(); });
+}
+
+function renderCal() {
+  const y = calMonth.getFullYear(), m = calMonth.getMonth();
+  const focused = document.activeElement && document.activeElement.dataset ? document.activeElement.dataset.date : null;
+  $("#calMonth").textContent = `${MONTHS[m]} ${y}`;
+  const offset = (new Date(y, m, 1).getDay() + 6) % 7;
+  const days = new Date(y, m + 1, 0).getDate();
+  const today = ymd(new Date());
+  let h = DOW_SHORT.map(d => `<div class="cal-dow" aria-hidden="true">${d}</div>`).join("");
+  for (let i = 0; i < offset; i++) h += "<span></span>";
+  for (let d = 1; d <= days; d++) {
+    const ds = `${y}-${pad(m + 1)}-${pad(d)}`;
+    const free = (DB && inRange(ds)) ? freeSlots(ds).length : 0;
+    const cls = ["day"];
+    if (free) cls.push("has");
+    if (ds === selDate) cls.push("sel");
+    if (ds === today) cls.push("today");
+    const label = `${fmtDate(ds)}, ${free ? `свободни часове: ${free}` : "няма свободни часове"}`;
+    h += `<button type="button" class="${cls.join(" ")}" data-date="${ds}" aria-label="${label}"${free ? "" : " disabled"}${ds === selDate ? ' aria-pressed="true"' : ""}>${d}</button>`;
+  }
+  $("#calGrid").innerHTML = h;
+  if (focused) { const b = $(`#calGrid [data-date="${focused}"]`); if (b && !b.disabled) b.focus(); }
+  const now = new Date(), mx = maxDate();
+  $("#calPrev").disabled = y < now.getFullYear() || (y === now.getFullYear() && m <= now.getMonth());
+  $("#calNext").disabled = y > mx.getFullYear() || (y === mx.getFullYear() && m >= mx.getMonth());
+}
+
+function renderTimes() {
+  const form = $("#bkForm");
+  if (!form.hidden) {
+    if (!submitting && selDate && selTime && taken.has(slotId(selDate, selTime))) {
+      toast("Избраният час току-що беше зает. Моля, изберете друг.", true);
+      backToTimes();
+    }
+    return;
+  }
+  if (!$("#bkDone").hidden || !selDate) return;
+  const list = freeSlots(selDate);
+  $("#bkDateLabel").textContent = cap(fmtDate(selDate));
+  $("#timeList").innerHTML = list.length
+    ? `<div class="times" role="group" aria-label="Свободни часове">${list.map(t => `<button type="button" class="time" data-time="${t}">${t}</button>`).join("")}</div>`
+    : `<div class="empty">Няма свободни часове за този ден. Изберете друг ден от календара.</div>`;
+}
+
+function backToTimes() {
+  selTime = null;
+  $("#bkForm").hidden = true;
+  $("#bkTimes").hidden = false;
+  setMsg($("#bkMsg"), "");
+  renderCal(); renderTimes();
+}
+
+function pickTime(t) {
+  selTime = t;
+  $("#bkTimes").hidden = true;
+  $("#bkForm").hidden = false;
+  $("#bkChosen").innerHTML = `<b>${esc(cap(fmtDate(selDate)))}</b>, от ${esc(t)} ч.`;
+  $("#bkService").focus();
+}
+
+async function submitBooking(e) {
+  e.preventDefault();
+  const msg = $("#bkMsg");
+  const name = $("#bkName").value.trim();
+  const phone = $("#bkPhone").value.trim();
+  const email = $("#bkEmail").value.trim();
+  const note = $("#bkNote").value.trim();
+  if ($("#bkWeb").value) { showDone(name, phone); return; }
+  if (!DB) return setMsg(msg, "Няма връзка със системата за записване. Презаредете страницата.", true);
+  if (name.length < 2) { setMsg(msg, "Въведете име и фамилия.", true); return $("#bkName").focus(); }
+  if (!PHONE_RE.test(phone) || phone.replace(/\D/g, "").length < 6) { setMsg(msg, "Въведете валиден телефонен номер.", true); return $("#bkPhone").focus(); }
+  if (email && !EMAIL_RE.test(email)) { setMsg(msg, "Проверете имейл адреса.", true); return $("#bkEmail").focus(); }
+  if (!$("#bkConsent").checked) { setMsg(msg, "Отбележете съгласието с Политиката за поверителност, за да продължите.", true); return $("#bkConsent").focus(); }
+
+  const btn = $("#bkSubmit");
+  submitting = true; btn.disabled = true; btn.textContent = "Изпращане…"; setMsg(msg, "");
+  try {
+    await DB.createBooking({
+      name, phone, email, note,
+      service: $("#bkService").value,
+      forWhom: ($("input[name=forWhom]:checked") || {}).value || "Дете",
+      date: selDate, time: selTime, consent: true
+    }, false);
+    showDone(name, phone);
+  } catch (err) {
+    console.error(err);
+    if (err.message === "taken") { toast("Този час току-що беше зает. Моля, изберете друг.", true); backToTimes(); }
+    else setMsg(msg, "Заявката не беше изпратена. Проверете интернет връзката и опитайте отново.", true);
+  } finally {
+    submitting = false; btn.disabled = false; btn.textContent = "Изпратете заявка";
+  }
+}
+
+function showDone(name, phone) {
+  const when = `${cap(fmtDate(selDate))}, от ${selTime} ч.`;
+  $("#bkForm").hidden = true;
+  $("#bkForm").reset();
+  $("#bkNameHint").hidden = false;
+  const box = $("#bkDone");
+  box.hidden = false;
+  box.innerHTML = `<div class="big"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <h3>Заявката е изпратена</h3>
+    <p><b>${esc(when)}</b></p>
+    <p>Ще се свържа с вас на <b>${esc(phone)}</b>, за да потвърдя часа. Ако плановете ви се променят, обадете се на <a href="tel:${esc(SITE.phone.replace(/[^\d+]/g, ""))}">${esc(SITE.phone)}</a>.</p>
+    <button type="button" class="btn btn-line" id="bkAgain">Запишете още един час</button>`;
+  box.setAttribute("tabindex", "-1");
+  box.focus();
+  selTime = null;
+}
+
+/* =====================================================================
+   9) REVIEWS
+   ===================================================================== */
+function renderReviews(list) {
+  list = list.slice().sort((a, b) => tsMs(b.createdAt) - tsMs(a.createdAt));
+  if (!list.length) {
+    $("#revScore").innerHTML = "";
+    $("#revList").innerHTML = `<div class="empty" style="column-span:all">Все още няма публикувани отзиви. Споделете вашето мнение първи.</div>`;
+    return;
+  }
+  const avg = list.reduce((s, r) => s + (+r.rating || 0), 0) / list.length;
+  $("#revScore").innerHTML = `<b>${avg.toFixed(1).replace(".", ",")}</b><div><div class="stars" aria-hidden="true">${stars(avg)}</div><span class="muted">Средна оценка от ${list.length} ${list.length === 1 ? "отзив" : "отзива"}</span></div>`;
+  $("#revList").innerHTML = list.map(r => `<article class="review">
+      <div class="stars" role="img" aria-label="Оценка ${+r.rating || 0} от 5">${stars(r.rating)}</div>
+      <p>${esc(r.text)}</p>
+      <footer><b>${esc(r.name)}</b><br>${fmtShort(r.createdAt)}</footer>
+    </article>`).join("");
+}
+
+async function submitReview(e) {
+  e.preventDefault();
+  const msg = $("#revMsg");
+  const name = $("#revName").value.trim();
+  const text = $("#revText").value.trim();
+  const rating = +(($("input[name=rating]:checked") || {}).value || 5);
+  if ($("#revWeb").value) return;
+  if (!DB) return setMsg(msg, "Няма връзка. Презаредете страницата.", true);
+  if (name.length < 2) { setMsg(msg, "Въведете име.", true); return $("#revName").focus(); }
+  if (text.length < 10) { setMsg(msg, "Напишете поне няколко думи (минимум 10 знака).", true); return $("#revText").focus(); }
+  if (!$("#revConsent").checked) { setMsg(msg, "Отбележете съгласието за публикуване.", true); return $("#revConsent").focus(); }
+  const btn = $("#revSubmit");
+  btn.disabled = true;
+  try {
+    await DB.addReview({ name, rating, text, consent: true });
+    $("#revForm").reset();
+    $("#revAdd").open = false;
+    $("#revForm").hidden = true;
+    toast("Благодарим! Отзивът ще бъде публикуван след преглед.");
+  } catch (err) {
+    console.error(err);
+    setMsg(msg, "Отзивът не беше изпратен. Опитайте отново.", true);
+  } finally { btn.disabled = false; }
+}
+
+/* =====================================================================
+   10) ARTICLES
+   ===================================================================== */
+function artCard(a) {
+  const cover = safeUrl(a.cover);
+  const ex = a.excerpt || (plain(a.body).slice(0, 140) + "…");
+  return `<a class="art" href="#/article/${encodeURIComponent(a.id)}">
+    <div class="art-cover" aria-hidden="true">${cover ? `<img src="${esc(cover)}" alt="" loading="lazy">` : esc((a.title || "").trim().charAt(0))}</div>
+    <div class="art-body"><span class="art-date">${fmtShort(a.createdAt)}</span><h3>${esc(a.title)}</h3><p>${esc(ex)}</p></div>
+  </a>`;
+}
+function renderArticleLists() {
+  $("#articlesHome").hidden = pubArticles.length === 0;
+  $("#artHome").innerHTML = pubArticles.slice(0, 3).map(artCard).join("");
+  $("#artAll").innerHTML = pubArticles.length
+    ? pubArticles.map(artCard).join("")
+    : `<div class="empty" style="grid-column:1/-1">Скоро тук ще има полезни статии.</div>`;
+}
+async function showArticle(id) {
+  currentArticleId = id;
+  const box = $("#artView");
+  let a = pubArticles.find(x => x.id === id);
+  if (!a && DB) {
+    box.innerHTML = `<p class="muted">Зареждане…</p>`;
+    a = await DB.getArticle(id, isAdmin);
+    if (currentArticleId !== id) return;
+  }
+  const crumbs = `<div class="crumbs"><a href="#/">Начало</a> / <a href="#/articles">Статии</a></div>`;
+  if (!a) {
+    box.innerHTML = `${crumbs}<h1>Статията не е намерена</h1><p class="lead">Възможно е да е премахната или адресът да е грешен.</p><a class="btn btn-primary" href="#/articles">Към всички статии</a>`;
+    return;
+  }
+  document.title = `${a.title} – ${SITE.role} ${SITE.therapist}`;
+  const cover = safeUrl(a.cover);
+  box.innerHTML = `${crumbs}
+    <h1>${esc(a.title)}</h1>
+    <p class="muted">${fmtShort(a.createdAt)}${a.published ? "" : " (чернова, видима само за администратора)"}</p>
+    ${cover ? `<div class="art-cover"><img src="${esc(cover)}" alt=""></div>` : ""}
+    <div class="prose">${md(a.body)}</div>
+    <div class="note">Информацията е обща и не замества индивидуална консултация. Ако имате въпроси за конкретно дете, <a href="#/" data-scroll="booking">запишете час</a>.</div>`;
+}
+
+/* =====================================================================
+   11) ROUTER
+   ===================================================================== */
+const VIEWS = ["home", "articles", "article", "privacy", "cookies", "terms", "admin"];
+const TITLES = {
+  home: () => `${SITE.role} в ${SITE.city} – ${SITE.therapist}`,
+  articles: () => `Статии – ${SITE.role} ${SITE.therapist}`,
+  privacy: () => "Политика за поверителност",
+  cookies: () => "Политика за бисквитки",
+  terms: () => "Общи условия",
+  admin: () => "Администрация"
+};
+function currentView() { const v = $(".view.active"); return v ? v.dataset.view : "home"; }
+function route() {
+  const parts = location.hash.replace(/^#\/?/, "").split("/");
+  let v = parts[0] || "home";
+  if (!VIEWS.includes(v)) v = "home";
+  $$(".view").forEach(el => el.classList.toggle("active", el.dataset.view === v));
+  closeMenu();
+  let robots = $("meta[name=robots]");
+  if (v === "admin") {
+    if (!robots) { robots = document.createElement("meta"); robots.name = "robots"; document.head.appendChild(robots); }
+    robots.content = "noindex,nofollow";
+  } else if (robots) robots.remove();
+  if (TITLES[v]) document.title = TITLES[v]();
+  if (v === "article") showArticle(decodeURIComponent(parts.slice(1).join("/")));
+  if (v === "admin") updateAdminView();
+  if (pendingScroll) { const id = pendingScroll; pendingScroll = null; setTimeout(() => scrollToId(id), 30); }
+  else window.scrollTo(0, 0);
+}
+function scrollToId(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: reduce ? "auto" : "smooth" });
+}
+function closeMenu() { $("#nav").classList.remove("open"); $("#menuBtn").setAttribute("aria-expanded", "false"); }
+
+/* =====================================================================
+   12) ADMIN PANEL
+   ===================================================================== */
+function updateAdminView() {
+  const logged = !!authUser && isAdmin;
+  $("#adLogin").hidden = logged;
+  $("#adPanel").hidden = !logged;
+  if (authUser && !isAdmin) setMsg($("#adLoginMsg"), "Този акаунт няма администраторски права.", true);
+  if (logged) $("#adUser").textContent = authUser.email || "";
+}
+function startAdminWatch() {
+  stopAdminWatch();
+  adminUnsubs = [
+    DB.watchBookings(l => { allBookings = l; renderAdBookings(); renderStats(); }),
+    DB.watchReviews(true, l => { allReviews = l; renderAdReviews(); renderStats(); }),
+    DB.watchArticles(true, l => { allArticles = l; renderAdArticles(); })
+  ];
+}
+function stopAdminWatch() {
+  adminUnsubs.forEach(f => { try { if (typeof f === "function") f(); } catch (e) {} });
+  adminUnsubs = [];
+  allBookings = []; allReviews = []; allArticles = [];
+}
+
+function isFuture(b) { return startTs(b) >= Date.now() - schedule.slot * 60e3; }
+
+function renderStats() {
+  const today = ymd(new Date());
+  const week = new Date(); week.setDate(week.getDate() + 7);
+  const wk = ymd(week);
+  const pending = allBookings.filter(b => b.status === "pending" && isFuture(b)).length;
+  const todayN = allBookings.filter(b => b.date === today && b.status !== "rejected").length;
+  const weekN = allBookings.filter(b => b.status === "confirmed" && b.date >= today && b.date <= wk).length;
+  const revP = allReviews.filter(r => r.status === "pending").length;
+  $("#adStats").innerHTML = `
+    <div class="stat${pending ? " hot" : ""}"><b>${pending}</b><span>Заявки за потвърждение</span></div>
+    <div class="stat"><b>${todayN}</b><span>Часове днес</span></div>
+    <div class="stat"><b>${weekN}</b><span>Потвърдени през следващите 7 дни</span></div>
+    <div class="stat${revP ? " hot" : ""}"><b>${revP}</b><span>Отзиви за преглед</span></div>`;
+  const cb = $("#cntBookings"); cb.hidden = !pending; cb.textContent = pending;
+  const cr = $("#cntReviews"); cr.hidden = !revP; cr.textContent = revP;
+}
+
+function notifyText(b, kind) {
+  const when = `${fmtDate(b.date)} от ${b.time} ч.`;
+  return kind === "confirmed"
+    ? `Здравейте, ${b.name}! Потвърждавам часа Ви при ${SITE.role.toLowerCase()} ${SITE.therapist}: ${when} Адрес: ${SITE.address}. При промяна, моля, обадете се на ${SITE.phone}.`
+    : `Здравейте, ${b.name}! За съжаление часът ${when} не може да бъде потвърден. Моля, изберете друг час на сайта или се обадете на ${SITE.phone}.`;
+}
+function gcalLink(b) {
+  const s = new Date(startTs(b)), e = new Date(startTs(b) + schedule.slot * 60e3);
+  const f = d => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  const q = new URLSearchParams({ action: "TEMPLATE", text: `${b.name} – ${b.service}`, dates: `${f(s)}/${f(e)}`, details: `Тел: ${b.phone}${b.note ? "\n" + b.note : ""}`, ctz: "Europe/Sofia" });
+  return "https://calendar.google.com/calendar/render?" + q.toString();
+}
+
+function renderAdBookings() {
+  const q = $("#bkSearch").value.trim().toLowerCase();
+  const qd = q.replace(/\D/g, "");
+  let l = allBookings.filter(b => {
+    const f = isFuture(b);
+    switch (bkFilter) {
+      case "upcoming": return f && b.status !== "rejected";
+      case "pending": return b.status === "pending";
+      case "confirmed": return b.status === "confirmed" && f;
+      case "rejected": return b.status === "rejected";
+      case "past": return !f;
+      default: return true;
+    }
+  }).filter(b => !q || String(b.name || "").toLowerCase().includes(q) || (qd && String(b.phone || "").replace(/\D/g, "").includes(qd)));
+  const desc = bkFilter === "past" || bkFilter === "all" || bkFilter === "rejected";
+  l.sort((a, b) => desc ? startTs(b) - startTs(a) : startTs(a) - startTs(b));
+  if (!l.length) {
+    $("#adBookings").innerHTML = `<div class="empty">Няма записи в този изглед.</div>`;
+    return;
+  }
+  $("#adBookings").innerHTML = l.map(b => {
+    const tel = String(b.phone || "").replace(/[^\d+]/g, "");
+    const acts = [];
+    if (b.status !== "confirmed") acts.push(`<button class="btn btn-ok btn-sm" data-act="confirm" data-id="${esc(b.id)}">Потвърди</button>`);
+    if (b.status !== "rejected") acts.push(`<button class="btn btn-bad btn-sm" data-act="reject" data-id="${esc(b.id)}">Откажи</button>`);
+    if (b.status !== "pending") {
+      const txt = notifyText(b, b.status);
+      if (tel) acts.push(`<a class="btn btn-line btn-sm" href="sms:${esc(tel)}?&body=${encodeURIComponent(txt)}">SMS</a>`);
+      if (b.email) acts.push(`<a class="btn btn-line btn-sm" href="mailto:${esc(b.email)}?subject=${encodeURIComponent(b.status === "confirmed" ? "Потвърждение на час" : "Относно заявката за час")}&body=${encodeURIComponent(txt)}">Имейл</a>`);
+    }
+    if (b.status === "confirmed") acts.push(`<a class="btn btn-line btn-sm" target="_blank" rel="noopener" href="${esc(gcalLink(b))}">В календара</a>`);
+    acts.push(`<button class="btn btn-line btn-sm" data-act="delete" data-id="${esc(b.id)}">Изтрий</button>`);
+    return `<div class="item">
+      <div>
+        <span class="when">${esc(cap(fmtDate(b.date)))}, ${esc(b.time)} ч.</span><span class="badge b-${esc(b.status)}">${esc(STATUS[b.status] || b.status)}</span>
+        <h4>${esc(b.name)}</h4>
+        <div class="sub">${esc(b.service)}${b.forWhom ? `, за: ${esc(String(b.forWhom).toLowerCase())}` : ""}<br>
+          ${tel ? `<a href="tel:${esc(tel)}">${esc(b.phone)}</a>` : esc(b.phone)}${b.email ? `, <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>` : ""}</div>
+        ${b.note ? `<div class="note-t">${esc(b.note)}</div>` : ""}
+        <div class="sub muted" style="font-size:.8rem;margin-top:6px">Заявка от ${fmtDT(b.createdAt)}</div>
+      </div>
+      <div class="acts">${acts.join("")}</div>
+    </div>`;
+  }).join("");
+}
+
+async function bookingAction(act, id) {
+  const b = allBookings.find(x => x.id === id);
+  if (!b) return;
+  try {
+    if (act === "confirm") { await DB.setBookingStatus(b, "confirmed"); toast("Часът е потвърден. Уведомете клиента с SMS или имейл."); }
+    if (act === "reject") {
+      if (!(await ask("Да откажа ли заявката? Часът ще стане свободен за други.", "Откажи заявката"))) return;
+      await DB.setBookingStatus(b, "rejected"); toast("Заявката е отказана. Часът е свободен.");
+    }
+    if (act === "delete") {
+      if (!(await ask(`Да изтрия ли окончателно записа на ${b.name}?`, "Изтрий"))) return;
+      await DB.deleteBooking(b); toast("Записът е изтрит.");
+    }
+  } catch (e) {
+    console.error(e);
+    toast(e.message === "taken" ? "Този час вече е зает от друга заявка." : "Действието не беше изпълнено. Опитайте отново.", true);
+  }
+}
+
+async function cleanupOld() {
+  const yearAgo = Date.now() - 365 * 864e5, monthAgo = Date.now() - 30 * 864e5;
+  const old = allBookings.filter(b => startTs(b) < yearAgo || (b.status === "rejected" && tsMs(b.createdAt) < monthAgo && startTs(b) < Date.now()));
+  if (!old.length) { toast("Няма стари записи за изтриване."); return; }
+  if (!(await ask(`Ще бъдат изтрити ${old.length} стари записа (по-стари от 12 месеца или отказани преди повече от 30 дни).`, "Изтрий старите записи"))) return;
+  try { for (const b of old) await DB.deleteBooking(b); toast(`Изтрити записи: ${old.length}.`); }
+  catch (e) { console.error(e); toast("Част от записите не бяха изтрити.", true); }
+}
+
+async function submitAdminAdd(e) {
+  e.preventDefault();
+  const msg = $("#aaMsg");
+  const b = {
+    date: $("#aaDate").value, time: $("#aaTime").value,
+    name: $("#aaName").value.trim(), phone: $("#aaPhone").value.trim(),
+    email: $("#aaEmail").value.trim(), note: $("#aaNote").value.trim(),
+    service: $("#aaService").value, forWhom: "Не е посочено", consent: true
+  };
+  if (!b.date || !b.time) return setMsg(msg, "Изберете дата и час.", true);
+  if (b.name.length < 2) return setMsg(msg, "Въведете име.", true);
+  if (!PHONE_RE.test(b.phone)) return setMsg(msg, "Въведете валиден телефон.", true);
+  if (b.email && !EMAIL_RE.test(b.email)) return setMsg(msg, "Проверете имейла.", true);
+  try {
+    await DB.createBooking(b, true);
+    $("#adAddForm").reset(); $("#adAddForm").hidden = true; setMsg(msg, "");
+    toast("Записът е добавен и потвърден.");
+  } catch (err) {
+    console.error(err);
+    setMsg(msg, err.message === "taken" ? "Този час вече е зает." : "Записът не беше запазен. Опитайте отново.", true);
+  }
+}
+
+function renderAdReviews() {
+  const l = allReviews.filter(r => rvFilter === "all" || r.status === rvFilter)
+    .sort((a, b) => tsMs(b.createdAt) - tsMs(a.createdAt));
+  if (!l.length) { $("#adReviews").innerHTML = `<div class="empty">Няма отзиви в този изглед.</div>`; return; }
+  $("#adReviews").innerHTML = l.map(r => {
+    const acts = [];
+    if (r.status !== "approved") acts.push(`<button class="btn btn-ok btn-sm" data-ract="approved" data-id="${esc(r.id)}">Публикувай</button>`);
+    if (r.status !== "hidden") acts.push(`<button class="btn btn-line btn-sm" data-ract="hidden" data-id="${esc(r.id)}">Скрий</button>`);
+    acts.push(`<button class="btn btn-bad btn-sm" data-ract="delete" data-id="${esc(r.id)}">Изтрий</button>`);
+    const cls = r.status === "approved" ? "b-confirmed" : r.status === "hidden" ? "b-draft" : "b-pending";
+    return `<div class="item"><div>
+      <span class="stars">${stars(r.rating)}</span><span class="badge ${cls}">${esc(RSTATUS[r.status] || r.status)}</span>
+      <h4>${esc(r.name)}</h4>
+      <div class="note-t">${esc(r.text)}</div>
+      <div class="sub muted" style="font-size:.8rem;margin-top:6px">Изпратен на ${fmtDT(r.createdAt)}</div>
+    </div><div class="acts">${acts.join("")}</div></div>`;
+  }).join("");
+}
+async function reviewAction(act, id) {
+  try {
+    if (act === "delete") {
+      if (!(await ask("Да изтрия ли отзива окончателно?", "Изтрий"))) return;
+      await DB.deleteReview(id); toast("Отзивът е изтрит.");
+    } else {
+      await DB.setReviewStatus(id, act);
+      toast(act === "approved" ? "Отзивът е публикуван." : "Отзивът е скрит.");
+    }
+  } catch (e) { console.error(e); toast("Действието не беше изпълнено.", true); }
+}
+
+function renderAdArticles() {
+  const l = allArticles.slice().sort((a, b) => tsMs(b.createdAt) - tsMs(a.createdAt));
+  if (!l.length) { $("#adArticles").innerHTML = `<div class="empty">Все още няма статии. Натиснете „Нова статия“, за да напишете първата.</div>`; return; }
+  $("#adArticles").innerHTML = l.map(a => `<div class="item"><div>
+      <span class="badge ${a.published ? "b-confirmed" : "b-draft"}" style="margin-left:0">${a.published ? "Публикувана" : "Чернова"}</span>
+      <h4 style="margin-top:6px">${esc(a.title)}</h4>
+      <div class="sub">${esc(a.excerpt || plain(a.body).slice(0, 110))}</div>
+      <div class="sub muted" style="font-size:.8rem;margin-top:6px">Създадена на ${fmtShort(a.createdAt)}</div>
+    </div><div class="acts">
+      <button class="btn btn-line btn-sm" data-aact="edit" data-id="${esc(a.id)}">Редактирай</button>
+      <button class="btn btn-sm ${a.published ? "btn-line" : "btn-ok"}" data-aact="toggle" data-id="${esc(a.id)}">${a.published ? "Скрий" : "Публикувай"}</button>
+      <a class="btn btn-line btn-sm" href="#/article/${encodeURIComponent(a.id)}">Преглед</a>
+      <button class="btn btn-bad btn-sm" data-aact="delete" data-id="${esc(a.id)}">Изтрий</button>
+    </div></div>`).join("");
+}
+function openArticleEditor(a) {
+  editingArticle = a ? a.id : null;
+  $("#arFormTitle").textContent = a ? "Редактиране на статия" : "Нова статия";
+  $("#arTitle").value = a ? a.title || "" : "";
+  $("#arExcerpt").value = a ? a.excerpt || "" : "";
+  $("#arCover").value = a ? a.cover || "" : "";
+  $("#arBody").value = a ? a.body || "" : "";
+  $("#arPub").checked = a ? !!a.published : false;
+  setMsg($("#arMsg"), "");
+  $("#arForm").hidden = false;
+  $("#arTitle").focus();
+}
+async function articleAction(act, id) {
+  const a = allArticles.find(x => x.id === id);
+  if (!a) return;
+  try {
+    if (act === "edit") openArticleEditor(a);
+    if (act === "toggle") { await DB.saveArticle(Object.assign({}, a, { published: !a.published })); toast(a.published ? "Статията е скрита." : "Статията е публикувана."); }
+    if (act === "delete") {
+      if (!(await ask(`Да изтрия ли статията „${a.title}“?`, "Изтрий"))) return;
+      await DB.deleteArticle(id); toast("Статията е изтрита.");
+      if (editingArticle === id) $("#arForm").hidden = true;
+    }
+  } catch (e) { console.error(e); toast("Действието не беше изпълнено.", true); }
+}
+async function submitArticle(e) {
+  e.preventDefault();
+  const msg = $("#arMsg");
+  const a = {
+    id: editingArticle,
+    title: $("#arTitle").value.trim(),
+    excerpt: $("#arExcerpt").value.trim(),
+    cover: safeUrl($("#arCover").value),
+    body: $("#arBody").value.trim(),
+    published: $("#arPub").checked
+  };
+  if (a.title.length < 3) return setMsg(msg, "Въведете заглавие.", true);
+  if (a.body.length < 20) return setMsg(msg, "Текстът е твърде кратък.", true);
+  if ($("#arCover").value.trim() && !a.cover) return setMsg(msg, "Линкът към снимката трябва да започва с https://", true);
+  try {
+    await DB.saveArticle(a);
+    $("#arForm").hidden = true; editingArticle = null;
+    toast(a.published ? "Статията е запазена и публикувана." : "Статията е запазена като чернова.");
+  } catch (err) { console.error(err); setMsg(msg, "Статията не беше запазена. Опитайте отново.", true); }
+}
+
+function fillSchedForm() {
+  schedDraft = JSON.parse(JSON.stringify(schedule));
+  $("#schDays").innerHTML = DAY_ORDER.map(k => {
+    const d = schedDraft.days[k];
+    return `<div class="sched-row" data-day="${k}">
+      <b>${cap(DOW_FULL[+k])}</b>
+      <label class="check" style="margin:0"><input type="checkbox" data-k="on"${d.on ? " checked" : ""}><span class="sr">Работен ден</span></label>
+      <input type="time" data-k="start" value="${esc(d.start)}" aria-label="Начало" step="300">
+      <input type="time" data-k="end" value="${esc(d.end)}" aria-label="Край" step="300">
+    </div>`;
+  }).join("");
+  $("#schSlot").value = String(schedDraft.slot);
+  $("#schAhead").value = schedDraft.ahead;
+  $("#schMin").value = schedDraft.minHours;
+  $("#schBreak").value = schedDraft.brk;
+  renderBlocked();
+}
+function renderBlocked() {
+  const today = ymd(new Date());
+  schedDraft.blocked = schedDraft.blocked.filter(d => d >= today).sort();
+  $("#schBlocked").innerHTML = schedDraft.blocked.length
+    ? schedDraft.blocked.map(d => `<span>${esc(fmtDate(d))}<button type="button" data-unblock="${esc(d)}" aria-label="Премахни ${esc(d)}">×</button></span>`).join("")
+    : `<span class="muted" style="border:0;background:none;padding:0">Няма добавени неработни дни.</span>`;
+}
+async function saveSchedule(e) {
+  e.preventDefault();
+  const days = {};
+  for (const row of $$("#schDays .sched-row")) {
+    const k = row.dataset.day;
+    const on = $("[data-k=on]", row).checked, start = $("[data-k=start]", row).value, end = $("[data-k=end]", row).value;
+    if (on && (!start || !end || toMin(start) >= toMin(end))) { toast(`Проверете часовете за ${DOW_FULL[+k]}.`, true); return; }
+    days[k] = { on, start: start || "09:00", end: end || "17:00" };
+  }
+  const s = {
+    slot: +$("#schSlot").value || 45,
+    brk: Math.max(0, Math.min(60, +$("#schBreak").value || 0)),
+    ahead: Math.max(7, Math.min(180, +$("#schAhead").value || 60)),
+    minHours: Math.max(0, Math.min(72, +$("#schMin").value || 0)),
+    days, blocked: schedDraft.blocked
+  };
+  try { await DB.saveSettings(s); toast("Работното време е запазено."); }
+  catch (err) { console.error(err); toast("Работното време не беше запазено.", true); }
+}
+
+/* =====================================================================
+   13) UI WIRING
+   ===================================================================== */
+function wireUI() {
+  document.addEventListener("click", e => {
+    const skip = e.target.closest('a[href="#main"]');
+    if (skip) { e.preventDefault(); $("#main").focus(); return; }
+    const a = e.target.closest("[data-scroll]");
+    if (!a) return;
+    e.preventDefault();
+    const id = a.dataset.scroll;
+    if (currentView() === "home") { closeMenu(); scrollToId(id); }
+    else { pendingScroll = id; location.hash = "#/"; }
+  });
+  window.addEventListener("hashchange", route);
+  window.addEventListener("scroll", () => $("#top").classList.toggle("scrolled", window.scrollY > 8), { passive: true });
+  $("#menuBtn").addEventListener("click", () => {
+    const open = $("#nav").classList.toggle("open");
+    $("#menuBtn").setAttribute("aria-expanded", String(open));
+  });
+
+  // cookie notice
+  let seen = false;
+  try { seen = !!localStorage.getItem("cookie_notice"); } catch (e) {}
+  if (!seen) $("#cookie").classList.add("show");
+  $("#cookieOk").addEventListener("click", () => {
+    try { localStorage.setItem("cookie_notice", "1"); } catch (e) {}
+    $("#cookie").classList.remove("show");
+  });
+
+  // booking
+  $("#calPrev").addEventListener("click", () => { calMonth.setMonth(calMonth.getMonth() - 1); renderCal(); });
+  $("#calNext").addEventListener("click", () => { calMonth.setMonth(calMonth.getMonth() + 1); renderCal(); });
+  $("#calGrid").addEventListener("click", e => {
+    const b = e.target.closest("[data-date]");
+    if (!b || b.disabled) return;
+    selDate = b.dataset.date; selTime = null;
+    $("#bkDone").hidden = true;
+    $("#bkForm").hidden = true;
+    $("#bkTimes").hidden = false;
+    renderCal(); renderTimes();
+    if (window.innerWidth < 860) scrollToId("bkSide");
+  });
+  $("#timeList").addEventListener("click", e => { const b = e.target.closest("[data-time]"); if (b) pickTime(b.dataset.time); });
+  $("#bkChange").addEventListener("click", backToTimes);
+  $$("input[name=forWhom]").forEach(r => r.addEventListener("change", () => {
+    $("#bkNameHint").hidden = $("input[name=forWhom]:checked").value !== "Дете";
+  }));
+  $("#bkForm").addEventListener("submit", submitBooking);
+  $("#bkDone").addEventListener("click", e => {
+    if (e.target.id !== "bkAgain") return;
+    $("#bkDone").hidden = true; $("#bkTimes").hidden = false;
+    renderCal(); renderTimes();
+  });
+
+  // reviews
+  $("#revAdd").addEventListener("toggle", () => {
+    const open = $("#revAdd").open;
+    $("#revForm").hidden = !open;
+    $("#revAdd summary").textContent = open ? "Затворете формата" : "Напишете отзив";
+    if (open) $("#revName").focus();
+  });
+  $("#revForm").addEventListener("submit", submitReview);
+
+  // admin: login
+  $("#adLogin").addEventListener("submit", async e => {
+    e.preventDefault();
+    const btn = $("#adLoginBtn"), msg = $("#adLoginMsg");
+    if (!DB) return setMsg(msg, "Няма връзка със сървъра.", true);
+    btn.disabled = true; setMsg(msg, "", true);
+    try { await DB.login($("#adEmail").value.trim(), $("#adPass").value); $("#adPass").value = ""; }
+    catch (err) { setMsg(msg, "Грешен имейл или парола.", true); }
+    finally { btn.disabled = false; }
+  });
+  $("#adLogout").addEventListener("click", () => DB && DB.logout());
+
+  // admin: tabs
+  $$(".tab").forEach(t => t.addEventListener("click", () => {
+    $$(".tab").forEach(x => x.setAttribute("aria-selected", String(x === t)));
+    $$(".pane").forEach(p => p.classList.toggle("active", p.dataset.pane === t.dataset.tab));
+    if (t.dataset.tab === "schedule") fillSchedForm();
+  }));
+
+  // admin: bookings
+  $("#bkFilters").addEventListener("click", e => {
+    const c = e.target.closest(".chip");
+    if (!c) return;
+    bkFilter = c.dataset.f;
+    $$("#bkFilters .chip").forEach(x => x.classList.toggle("on", x === c));
+    renderAdBookings();
+  });
+  $("#bkSearch").addEventListener("input", renderAdBookings);
+  $("#adBookings").addEventListener("click", e => { const b = e.target.closest("[data-act]"); if (b) bookingAction(b.dataset.act, b.dataset.id); });
+  $("#adAddBtn").addEventListener("click", () => {
+    const f = $("#adAddForm");
+    f.hidden = !f.hidden;
+    if (!f.hidden) { $("#aaDate").min = ymd(new Date()); $("#aaDate").value = $("#aaDate").value || ymd(new Date()); $("#aaTime").focus(); }
+  });
+  $("#aaCancel").addEventListener("click", () => { $("#adAddForm").hidden = true; });
+  $("#adAddForm").addEventListener("submit", submitAdminAdd);
+  const clean = document.createElement("button");
+  clean.className = "btn btn-line btn-sm"; clean.type = "button"; clean.textContent = "Изчисти стари записи";
+  clean.title = "Изтрива записи по-стари от 12 месеца и отказани заявки по-стари от 30 дни (GDPR)";
+  clean.addEventListener("click", cleanupOld);
+  $("#bkFilters").appendChild(clean);
+
+  // admin: reviews
+  $("#rvFilters").addEventListener("click", e => {
+    const c = e.target.closest(".chip");
+    if (!c) return;
+    rvFilter = c.dataset.f;
+    $$("#rvFilters .chip").forEach(x => x.classList.toggle("on", x === c));
+    renderAdReviews();
+  });
+  $("#adReviews").addEventListener("click", e => { const b = e.target.closest("[data-ract]"); if (b) reviewAction(b.dataset.ract, b.dataset.id); });
+
+  // admin: articles
+  $("#arNew").addEventListener("click", () => openArticleEditor(null));
+  $("#arCancel").addEventListener("click", () => { $("#arForm").hidden = true; editingArticle = null; });
+  $("#arForm").addEventListener("submit", submitArticle);
+  $("#adArticles").addEventListener("click", e => { const b = e.target.closest("[data-aact]"); if (b) articleAction(b.dataset.aact, b.dataset.id); });
+
+  // admin: schedule
+  $("#schForm").addEventListener("submit", saveSchedule);
+  $("#schBlockAdd").addEventListener("click", () => {
+    const v = $("#schBlockDate").value;
+    if (!v) return toast("Изберете дата.", true);
+    if (!schedDraft.blocked.includes(v)) schedDraft.blocked.push(v);
+    $("#schBlockDate").value = "";
+    renderBlocked();
+  });
+  $("#schBlocked").addEventListener("click", e => {
+    const b = e.target.closest("[data-unblock]");
+    if (!b) return;
+    schedDraft.blocked = schedDraft.blocked.filter(d => d !== b.dataset.unblock);
+    renderBlocked();
+  });
+}
+
+/* =====================================================================
+   14) BOOT
+   ===================================================================== */
+async function boot() {
+  applySite();
+  $("#main").tabIndex = -1;
+  wireUI();
+  renderHours();
+  renderCal();
+  try {
+    DB = FIREBASE_CONFIG ? await FirebaseDB(FIREBASE_CONFIG) : LocalDB();
+  } catch (e) {
+    console.error("Firebase could not load", e);
+    toast("Няма връзка със системата. Опитайте да презаредите страницата.", true);
+  }
+  route();
+  if (!DB) return;
+  if (DB.mode === "demo") $("#demoBar").hidden = false;
+
+  DB.watchSettings(s => {
+    schedule = normSched(s);
+    renderHours(); watchSlots(); renderCal(); renderTimes();
+  });
+  DB.watchReviews(false, renderReviews);
+  DB.watchArticles(false, l => {
+    pubArticles = l.filter(a => a.published).sort((a, b) => tsMs(b.createdAt) - tsMs(a.createdAt));
+    renderArticleLists();
+    if (currentView() === "article" && currentArticleId) showArticle(currentArticleId);
+  });
+  DB.onAuth((u, ok) => {
+    authUser = u; isAdmin = !!ok;
+    updateAdminView();
+    if (isAdmin) startAdminWatch(); else stopAdminWatch();
+  });
+  // keep times fresh (past slots disappear, new day rolls over)
+  setInterval(() => { watchSlots(); renderCal(); renderTimes(); if (isAdmin) { renderStats(); } }, 60000);
+}
+
+boot();
+})();
+</script>
+</body>
+</html>
