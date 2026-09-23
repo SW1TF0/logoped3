@@ -158,6 +158,18 @@ section.band{padding:104px 0}
 @media (max-width:980px){.services{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.services{grid-template-columns:1fr}}
 
+/* observation checklist */
+.obs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:34px}
+.obs-card{border:1px solid var(--line);background:var(--cream);padding:26px 24px;display:grid;grid-template-columns:24px 1fr;gap:16px;align-items:start;cursor:pointer;transition:border-color .25s,background .25s}
+.obs-card:hover{border-color:var(--rose)}
+.obs-card input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--rose-d)}
+.obs-card b{display:block;font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.obs-card p{margin:0;font-size:.95rem}
+.obs-card:has(input:checked){background:var(--blush-2);border-color:var(--rose)}
+.obs-bar{background:var(--greige);border-left:3px solid var(--rose);padding:30px 34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.obs-bar p{margin:0;font-family:var(--f-head);font-size:1.3rem;color:var(--ink);max-width:46ch;line-height:1.45}
+@media (max-width:900px){.obs{grid-template-columns:1fr}}
+
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;counter-reset:st}
 .step{counter-increment:st;padding-top:26px;border-top:1px solid var(--rose)}
@@ -414,7 +426,7 @@ details.rev-add[open] summary{margin-bottom:24px}
         <h1>Не просто упражнения.<span class="italic-line">Ясна и спокойна реч.</span></h1>
         <div class="rule"></div>
         <p class="lead">Логопедична диагностика и терапия за деца и възрастни в <span data-site="city">Кърджали</span> – с <b>индивидуален план</b>, <b>ясни цели</b> и <b>упражнения за у дома</b>, защото напредъкът се гради между заниманията.</p>
-        <div class="kw"><span>Ранна диагностика</span><span>Звуци и артикулация</span><span>Езиково развитие</span><span>Четене и писане</span></div>
+        <div class="kw"><span>Ранна диагностика</span><span>Звуци и артикулация</span><span>Езиково развитие</span><span>Четене и писане</span><span>Миофункционална терапия</span></div>
         <a class="btn btn-primary btn-arrow" href="#/" data-scroll="booking">Запиши час</a>
       </div>
       <div class="hero-photo" id="portrait">
@@ -443,8 +455,8 @@ details.rev-add[open] summary{margin-bottom:24px}
           <h3>Четене и писане</h3><p>Подкрепа при дислексия и дисграфия в предучилищна и училищна възраст.</p>
         </div>
         <div class="f">
-          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M30 12c-8 0-14 5-14 12 0 3 1 5 2 7l-2 7 8-3c2 1 4 1 6 1 8 0 14-5 14-12S38 12 30 12z"/></svg>
-          <h3>Подкрепа за родители</h3><p>Какво да правите у дома и как да подпомогнете речта всеки ден.</p>
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M16 10c-3 4-4 9-4 14 0 8 5 14 12 14s12-6 12-14c0-5-1-10-4-14"/><path d="M18 26c2 2 4 3 6 3s4-1 6-3"/><path d="M24 14v8"/></svg>
+          <h3>Миофункционални навици</h3><p>Дишане през устата, позиция на езика и преглъщане, които влияят на речта.</p>
         </div>
       </div>
     </div>
@@ -476,6 +488,26 @@ details.rev-add[open] summary{margin-bottom:24px}
         <p class="lead">Ако не сте сигурни коя услуга ви трябва, запишете първа консултация. След нея ще знаете точно какви са следващите стъпки.</p>
       </div>
       <div class="services" id="servicesList"></div>
+    </div>
+  </section>
+
+  <section class="band band-white" id="myo">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Наблюдение вкъщи</div>
+        <h2>Три неща, които можете да проверите тази вечер</h2>
+        <p class="lead">Миофункционалните навици рядко се забелязват изведнъж. Ето какво оглеждам първо – и вие можете да го видите у дома, без нищо специално.</p>
+      </div>
+      <div class="obs">
+        <label class="obs-card"><input type="checkbox"><span><b>Спи с отворена уста</b><p>Погледнете детето 10–15 минути след като заспи. Устата затворена ли е?</p></span></label>
+        <label class="obs-card"><input type="checkbox"><span><b>Диша шумно или хърка</b><p>Чува ли се дишането от другия край на стаята? Всяка нощ или само при настинка?</p></span></label>
+        <label class="obs-card"><input type="checkbox"><span><b>Езикът стои между зъбите</b><p>При преглъщане, говор или в покой подава ли се езикът напред между зъбите?</p></span></label>
+      </div>
+      <div class="obs-bar">
+        <p>Отбелязахте ли поне едно? Вземете наблюдението със себе си на консултацията – то е най-добрата начална точка.</p>
+        <a class="btn btn-primary btn-arrow" href="#/" data-scroll="booking">Запиши час за консултация</a>
+      </div>
+      <p class="hint" style="margin-top:18px">Това не е диагноза и не заменя преглед. Наблюденията помагат разговорът да започне от конкретното.</p>
     </div>
   </section>
 
@@ -611,6 +643,7 @@ details.rev-add[open] summary{margin-bottom:24px}
         <details><summary>На каква възраст да потърся логопед?</summary><p>Ако детето на 2 години почти не говори, на 3 години не се разбира от непознати или на 5 години все още не произнася правилно някои звуци, консултацията е добра идея. Колкото по-рано, толкова по-лесно.</p></details>
         <details><summary>Колко продължава едно занимание?</summary><p>Обикновено между 30 и 45 минути, според възрастта и концентрацията на детето. Първата консултация може да е малко по-дълга.</p></details>
         <details><summary>Колко занимания ще са нужни?</summary><p>Зависи от конкретното затруднение. След диагностиката ще получите план с ориентировъчен брой срещи и цели.</p></details>
+        <details><summary>Какво са миофункционални нарушения?</summary><p>Това са навици и функции на устната област – дишане през устата, ниска позиция на езика, неправилно преглъщане, смучене на палец или залъгалка. Те могат да променят захапката и растежа на лицето и често вървят заедно с неправилно произнасяне на звуци. Работим с упражнения за езика, устните и дишането, при нужда заедно с ортодонт или УНГ специалист.</p></details>
         <details><summary>Как да откажа или преместя час?</summary><p>Обадете се или пишете поне 24 часа предварително, за да може часът да бъде предложен на друго семейство.</p></details>
         <details><summary>Трябва ли родителят да присъства?</summary><p>На първата среща – да. На следващите занимания решаваме заедно, според това кое е по-добре за детето.</p></details>
       </div>
@@ -967,6 +1000,7 @@ const SITE = {
     { mark:"Ее", name:"Забавено езиково развитие", desc:"За деца, които говорят малко, трудно съставят изречения или не разбират добре инструкции.", price:"" },
     { mark:"Пп", name:"Плавност на речта (заекване)", desc:"Техники за по-спокойна и плавна реч за деца и възрастни, с включване на семейството.", price:"" },
     { mark:"Чч", name:"Затруднения в четенето и писането", desc:"Подкрепа при дислексия и дисграфия: разпознаване на букви, четене с разбиране и правопис.", price:"" },
+    { mark:"Мм", name:"Миофункционални нарушения", desc:"Неправилно преглъщане, ниска позиция на езика, дишане през устата и навици като смучене на палец или залъгалка, които влияят на речта и захапката.", price:"" },
     { mark:"Рр", name:"Консултация за родители", desc:"Как да подкрепите речта на детето у дома с ежедневни игри и прости упражнения.", price:"" }
   ]
 };
