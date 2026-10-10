@@ -137,7 +137,8 @@ section.band{padding:104px 0}
 @media (max-width:760px){.stats .wrap{grid-template-columns:1fr 1fr;gap:28px}.stats .s:nth-child(odd){border-left:0}}
 
 /* about */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about{display:grid;grid-template-columns:3fr 2fr;gap:72px;align-items:start}
+.about-quote-col{position:sticky;top:110px}
 .about-quote{background:var(--greige);padding:48px;font-family:var(--f-head);font-size:1.5rem;font-style:italic;color:var(--ink);line-height:1.5;position:relative}
 .about-quote::before{content:"“";position:absolute;top:10px;left:24px;font-family:var(--f-head);font-size:5rem;color:var(--rose);line-height:1}
 .about-quote p{margin:0;padding-top:24px}
@@ -145,7 +146,7 @@ section.band{padding:104px 0}
 .creds{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
 .creds li{display:flex;gap:16px;align-items:flex-start;font-size:.98rem}
 .creds li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rose);margin-top:.65em;flex:none}
-@media (max-width:900px){.about{grid-template-columns:1fr;gap:40px}}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:40px}.about-quote-col{position:static}}
 
 /* services */
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
@@ -154,9 +155,17 @@ section.band{padding:104px 0}
 .svc-ico{display:block;font-family:var(--f-head);font-style:italic;font-size:1.9rem;color:var(--rose);margin-bottom:26px;line-height:1}
 .svc h3{font-size:1.22rem;margin-bottom:.55em}
 .svc p{font-size:.97rem;margin:0}
+.svc p+p{margin-top:.8em}
+.online{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:56px;background:var(--greige);border-left:3px solid var(--rose);padding:44px 48px}
+.online h3{font-size:1.5rem;margin-bottom:.6em}
+.online h4{font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 14px}
+.online p{font-size:.97rem}
+.online .creds{margin:0 0 20px}
+@media (max-width:900px){.online{grid-template-columns:1fr;gap:28px;padding:32px 26px}}
 .svc .meta{margin-top:14px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-t)}
-@media (max-width:980px){.services{grid-template-columns:1fr 1fr}}
-@media (max-width:640px){.services{grid-template-columns:1fr}}
+.svc:last-child:nth-child(3n+2){grid-column:span 2}
+@media (max-width:980px){.services{grid-template-columns:1fr 1fr}.svc:last-child:nth-child(n){grid-column:auto}.svc:last-child:nth-child(odd){grid-column:span 2}}
+@media (max-width:640px){.services{grid-template-columns:1fr}.svc:last-child:nth-child(odd){grid-column:auto}}
 
 /* observation checklist */
 .obs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:34px}
@@ -399,8 +408,8 @@ details.rev-add[open] summary{margin-bottom:24px}
 <header class="top" id="top">
   <div class="wrap">
     <a class="logo" href="#/" aria-label="Начало">
-      <span class="logo-mark" data-site="initials" aria-hidden="true">ИФ</span>
-      <span><b data-site="therapist">Име Фамилия</b><small data-site="role">Логопед</small></span>
+      <span class="logo-mark" data-site="initials" aria-hidden="true">ДА</span>
+      <span><b data-site="therapist">Деница Ангелова</b><small data-site="role">Логопед</small></span>
     </a>
     <nav class="nav" id="nav" aria-label="Основна навигация">
       <a href="#/" data-scroll="about">За мен</a>
@@ -465,15 +474,22 @@ details.rev-add[open] summary{margin-bottom:24px}
   <section class="band band-white" id="about">
     <div class="wrap about">
       <div>
-        <div class="eyebrow">Моят подход</div>
-        <h2>Спокойна работа.<span class="italic-line">Видим напредък.</span></h2>
-        <p class="lead" data-site="bio">Логопед съм с опит в работата с деца и възрастни. Добрата терапия започва с доверие: детето трябва да се чувства спокойно, а родителят да знае какво правим и защо.</p>
-        <p>След първата консултация получавате ясно заключение и индивидуален план с конкретни цели. Работим с игри, картинки и упражнения, които продължавате и у дома.</p>
+        <div class="eyebrow">За мен</div>
+        <h2 data-site="therapist">Деница Ангелова</h2>
+        <p class="lead" data-site="bio">Казвам се Деница Ангелова и съм логопед с професионален опит от 2016 година. Завърших висшето си образование в Софийския университет „Св. Климент Охридски“, гр. София.</p>
+        <p>Още преди дипломирането си имах възможност да бъда част от стажантски програми в различни институции, където се срещнах с разнообразни комуникативни нарушения и различни подходи за тяхното проследяване и терапия. Този опит ми помогна да изградя по-широк поглед върху логопедичната работа и да разбера колко индивидуален е пътят на всеки човек.</p>
+        <p>С развитието на частната ми практика постепенно изградих собствен стил на работа. Натрупаният опит, наблюденията и ежедневната работа с деца и възрастни ми помогнаха да открия малките, но важни детайли, които правят терапевтичния процес по-ефективен, разбираем и адаптиран към конкретния човек.</p>
+        <p>През последните години професионалният ми път ме срещна с много деца с комплексни трудности, което естествено ме насочи към миофункционалната терапия – област, която отдавна представлява особен интерес за мен.</p>
+        <p>Миофункционалната терапия е предизвикателна и изисква задълбочени познания и мултидисциплинарен подход, тъй като често свързва работата на различни специалисти и разглежда човека като едно цяло. Именно това ме привлече към нея и ме мотивира да се специализирам в тази област.</p>
+        <p>Преминах специализирано обучение по миофункционална терапия в Русия, както и десетки допълнителни обучения и квалификации в България. Продължавам да надграждам знанията и уменията си, защото вярвам, че добрата терапия се основава не само на опита, но и на постоянното професионално развитие.</p>
+        <p>Днес работя както с деца, така и с възрастни, като се стремя терапията да бъде индивидуално съобразена с нуждите на всеки човек, с ясни цели и устойчиви резултати.</p>
         <ul class="creds" id="creds"></ul>
       </div>
-      <div class="about-quote">
-        <p>Всяко дете говори, когато се почувства чуто. Моята работа е да създам точно това усещане – и след това да дам на речта инструментите ѝ.</p>
-        <cite data-site="therapist"></cite>
+      <div class="about-quote-col">
+        <div class="about-quote">
+          <p>Вярвам, че добрата терапия се основава не само на опита, но и на постоянното професионално развитие.</p>
+          <cite data-site="therapist"></cite>
+        </div>
       </div>
     </div>
   </section>
@@ -485,9 +501,28 @@ details.rev-add[open] summary{margin-bottom:24px}
       <div class="sec-head">
         <div class="eyebrow">Услуги</div>
         <h2>Терапия, съобразена с всяка възраст</h2>
-        <p class="lead">Ако не сте сигурни коя услуга ви трябва, запишете първа консултация. След нея ще знаете точно какви са следващите стъпки.</p>
+        <p class="lead">Предлагам индивидуална терапия за деца и възрастни, съобразена с конкретните потребности, възрастта и целите на всеки човек.</p>
       </div>
       <div class="services" id="servicesList"></div>
+      <div class="online" id="online">
+        <div>
+          <div class="eyebrow">Онлайн</div>
+          <h3>Онлайн логопедична терапия</h3>
+          <p>Онлайн форматът позволява терапията да се провежда удобно от дома, независимо от местоположението на клиента. Заниманията са индивидуални и се съобразяват с възрастта, потребностите и конкретните цели на терапията.</p>
+          <p style="margin:0">Онлайн могат да бъдат провеждани подходящи за дистанционен формат логопедични и миофункционални занимания, като при необходимост се дават насоки и задачи за работа между терапевтичните сесии.</p>
+        </div>
+        <div>
+          <h4>За кого е подходяща?</h4>
+          <p>Онлайн терапията може да бъде подходящ вариант за:</p>
+          <ul class="creds">
+            <li>деца и възрастни, които не се намират в града, в който практикувам;</li>
+            <li>семейства, за които дистанционният формат е по-удобен;</li>
+            <li>хора, които предпочитат да провеждат терапията в домашна среда;</li>
+            <li>клиенти, при които конкретният вид терапия позволява ефективна работа онлайн.</li>
+          </ul>
+          <p class="hint" style="margin:0">Преди започване на терапията се прави преценка дали онлайн форматът е подходящ за конкретния случай.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -972,7 +1007,7 @@ details.rev-add[open] summary{margin-bottom:24px}
    1) CLIENT SETTINGS – edit these values for the therapist
    ===================================================================== */
 const SITE = {
-  therapist: "Име Фамилия",
+  therapist: "Деница Ангелова",
   role: "Логопед",
   city: "Кърджали",
   address: "ул. „Примерна“ № 1, гр. Кърджали",
@@ -990,18 +1025,28 @@ const SITE = {
     { big: "Кърджали", small: "ул. „Примерна“ № 1" }
   ],
   credentials: [
-    "Магистър по логопедия",
-    "Работа с деца от 2 години, ученици и възрастни",
-    "Индивидуален план и домашни упражнения след всяко занимание"
+    "Логопед с професионален опит от 2016 година",
+    "Софийски университет „Св. Климент Охридски“",
+    "Специализирано обучение по миофункционална терапия в Русия",
+    "Работа с деца и възрастни, на място и онлайн"
   ],
-  services: [
-    { mark:"Дд", name:"Първа консултация и диагностика", desc:"Оценка на речта, езика и слуховото внимание. Получавате ясно заключение и препоръки.", price:"" },
-    { mark:"Зз", name:"Правилно произнасяне на звуци", desc:"Работа по звуци като Р, Л, С, Ш, Ж и Ц, когато детето ги пропуска, заменя или изговаря неточно.", price:"" },
-    { mark:"Ее", name:"Забавено езиково развитие", desc:"За деца, които говорят малко, трудно съставят изречения или не разбират добре инструкции.", price:"" },
-    { mark:"Пп", name:"Плавност на речта (заекване)", desc:"Техники за по-спокойна и плавна реч за деца и възрастни, с включване на семейството.", price:"" },
-    { mark:"Чч", name:"Затруднения в четенето и писането", desc:"Подкрепа при дислексия и дисграфия: разпознаване на букви, четене с разбиране и правопис.", price:"" },
-    { mark:"Мм", name:"Миофункционални нарушения", desc:"Неправилно преглъщане, ниска позиция на езика, дишане през устата и навици като смучене на палец или залъгалка, които влияят на речта и захапката.", price:"" },
-    { mark:"Рр", name:"Консултация за родители", desc:"Как да подкрепите речта на детето у дома с ежедневни игри и прости упражнения.", price:"" }
+  services: [             // desc can be one text or a list of paragraphs
+    { mark:"Мм", name:"Орофациална миофункционална терапия", desc:[
+      "Орофациалната миофункционална терапия е специализирано направление, насочено към оптимизиране на функциите на мускулите в областта на устата, лицето и челюстта.",
+      "Терапията включва работа върху различни орофациални функции и може да бъде част от мултидисциплинарен подход, когато е необходимо взаимодействие с други специалисти."], price:"" },
+    { mark:"Лл", name:"Логопедична терапия", desc:[
+      "Индивидуална логопедична терапия при различни комуникативни нарушения и затруднения.",
+      "Терапевтичният подход се съобразява с индивидуалните особености на детето или възрастния, като се поставят конкретни цели и се проследява развитието във времето."], price:"" },
+    { mark:"Аа", name:"Артикулационна терапия", desc:[
+      "Работа върху правилното произношение на звуковете и тяхното използване в речта.",
+      "Терапията включва постепенно изграждане и автоматизиране на правилната артикулация, така че новоизграденият навик да се пренесе в спонтанната реч."], price:"" },
+    { mark:"Ее", name:"Езикова терапия", desc:[
+      "Терапия при затруднения в развитието и използването на езика.",
+      "Работи се върху компоненти като разбиране и употреба на речта, речников запас, граматична структура, съставяне на изречения и свързана реч, в зависимост от индивидуалните потребности."], price:"" },
+    { mark:"Пп", name:"Развитие на предучилищните умения", desc:[
+      "Подготовка на детето за успешно включване в училищната среда чрез развитие на основни умения, необходими за ученето.",
+      "Работи се върху езикови, речеви, познавателни и други умения, свързани с подготовката за училище, като заниманията се адаптират към възрастта и индивидуалното развитие на детето."], price:"" },
+    { mark:"Оо", name:"Онлайн логопедична терапия", desc:"", price:"", card:false }
   ]
 };
 
@@ -1367,8 +1412,8 @@ function applySite() {
   if (SITE.photo) $("#portrait").innerHTML = `<img src="${esc(SITE.photo)}" alt="${esc(SITE.role + " " + SITE.therapist)}">`;
   $("#creds").innerHTML = SITE.credentials.map(c => `<li>${esc(c)}</li>`).join("");
 
-  $("#servicesList").innerHTML = SITE.services.map(s =>
-    `<article class="svc"><span class="svc-ico" aria-hidden="true">${esc(s.mark)}</span><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p>${s.price ? `<div class="meta">Цена: ${esc(s.price)}</div>` : ""}</article>`
+  $("#servicesList").innerHTML = SITE.services.filter(s => s.card !== false).map(s =>
+    `<article class="svc"><span class="svc-ico" aria-hidden="true">${esc(s.mark)}</span><h3>${esc(s.name)}</h3>${[].concat(s.desc).map(p => `<p>${esc(p)}</p>`).join("")}${s.price ? `<div class="meta">Цена: ${esc(s.price)}</div>` : ""}</article>`
   ).join("");
   const sb = $("#statsBand");
   if (sb) sb.innerHTML = (SITE.stats || []).map(s => `<div class="s"><b>${esc(s.big)}</b><span>${esc(s.small)}</span></div>`).join("");
